@@ -1,4 +1,6 @@
-package com.bioodas.seckill.controller;
+package com.bioodas.seckill.web.controller;
+
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,11 +14,12 @@ import com.bioodas.seckill.service.SeckillUserService;
 import com.bioodas.seckill.util.MD5Util;
 import com.bioodas.seckill.util.ResultVOUtil;
 import com.bioodas.seckill.vo.ResultVO;
+import com.bioodas.seckill.web.form.UserForm;
 
 @Controller
 @RequestMapping("user")
 public class LoginController {
-	
+
 	@Autowired
 	private SeckillUserService seckillUserService;
 
@@ -24,18 +27,18 @@ public class LoginController {
 	public String index() {
 		return "user/login";
 	}
-	
+
 	@PostMapping("login")
 	@ResponseBody
-	public ResultVO<?> login(String mobile,String password) {
-		System.err.println(mobile+":"+password);
+	public ResultVO<?> login(@Valid UserForm userForm) {
+		System.err.println(userForm.getMobile()+":"+userForm.getPassword());
 		/**密码效验*/
-		SeckillUser seckillUser = seckillUserService.findByMobile(mobile);
+		SeckillUser seckillUser = seckillUserService.findByMobile(userForm.getMobile());
 		System.err.println(seckillUser);
-		String calcPass = MD5Util.formPassToDBPass(password, seckillUser.getSalt());
+		String calcPass = MD5Util.formPassToDBPass(userForm.getPassword(), seckillUser.getSalt());
 		System.err.println("calcPass:"+calcPass);
 		if(calcPass.equals(seckillUser.getPassword())) {
-		  return	ResultVOUtil.success(seckillUser);
+			return	ResultVOUtil.success(seckillUser);
 		}
 		return ResultVOUtil.fail("登录失败");
 	}

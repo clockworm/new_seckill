@@ -15,8 +15,8 @@ import com.bioodas.seckill.vo.ResultVO;
 import lombok.extern.slf4j.Slf4j;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
 @Slf4j
+@SpringBootTest
 public class UserDaoTest {
 
 	@Autowired

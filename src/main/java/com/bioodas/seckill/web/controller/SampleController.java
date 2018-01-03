@@ -1,4 +1,4 @@
-package com.bioodas.seckill.controller;
+package com.bioodas.seckill.web.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
