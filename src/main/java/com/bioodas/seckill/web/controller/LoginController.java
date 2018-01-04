@@ -9,9 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.bioodas.seckill.entity.SeckillUser;
-import com.bioodas.seckill.service.SeckillUserService;
-import com.bioodas.seckill.util.MD5Util;
+import com.bioodas.seckill.service.LoginService;
 import com.bioodas.seckill.util.ResultVOUtil;
 import com.bioodas.seckill.vo.ResultVO;
 import com.bioodas.seckill.web.form.UserForm;
@@ -21,7 +19,7 @@ import com.bioodas.seckill.web.form.UserForm;
 public class LoginController {
 
 	@Autowired
-	private SeckillUserService seckillUserService;
+	private LoginService loginService;
 
 	@GetMapping("login")
 	public String index() {
@@ -31,15 +29,7 @@ public class LoginController {
 	@PostMapping("login")
 	@ResponseBody
 	public ResultVO<?> login(@Valid UserForm userForm) {
-		System.err.println(userForm.getMobile()+":"+userForm.getPassword());
-		/**密码效验*/
-		SeckillUser seckillUser = seckillUserService.findByMobile(userForm.getMobile());
-		System.err.println(seckillUser);
-		String calcPass = MD5Util.formPassToDBPass(userForm.getPassword(), seckillUser.getSalt());
-		System.err.println("calcPass:"+calcPass);
-		if(calcPass.equals(seckillUser.getPassword())) {
-			return	ResultVOUtil.success(seckillUser);
-		}
-		return ResultVOUtil.fail("登录失败");
+		 boolean login = loginService.login(userForm);
+		 return ResultVOUtil.success(login);
 	}
 }
