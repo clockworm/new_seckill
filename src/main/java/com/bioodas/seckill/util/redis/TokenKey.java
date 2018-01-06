@@ -14,6 +14,7 @@ public class TokenKey extends BasePrefix{
 
 	public final static String TOKEN_KEY = "token";
 	
-	public final static TokenKey generateKeyByToken = new TokenKey(20,"token_%s");
+	/**默认token过期时间为2小时*/
+	public final static TokenKey generateKeyByToken = new TokenKey(60*60*2,"token_%s");
 
 }
