@@ -71,8 +71,6 @@ function doLogin(){
 	var str = "" + salt.charAt(1) + salt.charAt(4) + salt.charAt(0) + inputPass + salt.charAt(2) + salt.charAt(3);
 	var password = md5(str);
 	
-	 //var link = /*[[@{}]]*/ 'login'; 
-	 
 	
 	$.ajax({
 		url: 'login',
@@ -83,13 +81,13 @@ function doLogin(){
 	    },
 	    success:function(data){
 	    	console.info(data);
-	    	/* layer.closeAll();
+	    	layer.closeAll();
 	    	if(data.code == 0){
 	    		layer.msg("成功");
-	    		window.location.href="/goods/to_list";
+	    		window.location.href= "../product/list";
 	    	}else{
 	    		layer.msg(data.msg);
-	    	} */
+	    	}
 	    },
 	    error:function(){
 	    	layer.closeAll();

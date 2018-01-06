@@ -13,6 +13,6 @@ public class UserKey extends BasePrefix{
 		super(expireSeconds, keyPrefix);
 	}
 
-	public static UserKey generateKeyById = new UserKey("id");
-	public static UserKey generateKeyByName = new UserKey(60*30,"name");
+	public final static UserKey generateKeyById = new UserKey("id_%s");
+	public final static UserKey generateKeyByName = new UserKey(60*30,"name_%s");
 }

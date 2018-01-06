@@ -20,7 +20,7 @@ public class RedisClient {
 		Jedis jedis = null;
 		try {
 			/**生成key策略*/
-			String realKey = prefix.generateKeyPrefix() + key;
+			String realKey = String.format(prefix.generateKeyPrefix(),key);
 			jedis = jedisPool.getResource();
 			String value = jedis.get(realKey);
 			return JsonUtil.jsonToObject(value, clazz);
@@ -36,7 +36,7 @@ public class RedisClient {
 		Jedis jedis = null;
 		try {
 			/**生成key策略*/
-			String realKey = prefix.generateKeyPrefix() + key;
+			String realKey = String.format(prefix.generateKeyPrefix(),key);
 			String json = JsonUtil.obejctToJson(value,true);
 			jedis = jedisPool.getResource();
 			jedis.setex(realKey, prefix.expireSeconds(), json);
@@ -54,7 +54,7 @@ public class RedisClient {
 		Jedis jedis = null;
 		try {
 			/**生成key策略*/
-			String realKey = prefix.generateKeyPrefix() + key;
+			String realKey = String.format(prefix.generateKeyPrefix(),key);
 			jedis = jedisPool.getResource();
 			return jedis.exists(realKey);
 		} finally {
@@ -69,7 +69,7 @@ public class RedisClient {
 		Jedis jedis = null;
 		try {
 			/**生成key策略*/
-			String realKey = prefix.generateKeyPrefix() + key;
+			String realKey = String.format(prefix.generateKeyPrefix(),key);
 			jedis = jedisPool.getResource();
 			return jedis.incr(realKey);
 		} finally {
@@ -84,7 +84,7 @@ public class RedisClient {
 		Jedis jedis = null;
 		try {
 			/**生成key策略*/
-			String realKey = prefix.generateKeyPrefix() + key;
+			String realKey = String.format(prefix.generateKeyPrefix(),key);
 			jedis = jedisPool.getResource();
 			return jedis.decr(realKey);
 		} finally {

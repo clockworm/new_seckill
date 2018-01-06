@@ -1,5 +1,6 @@
 package com.bioodas.seckill.web.controller;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,7 @@ import com.bioodas.seckill.vo.ResultVO;
 import com.bioodas.seckill.web.form.UserForm;
 
 @Controller
-@RequestMapping("user")
+@RequestMapping("common")
 public class LoginController {
 
 	@Autowired
@@ -23,13 +24,13 @@ public class LoginController {
 
 	@GetMapping("login")
 	public String index() {
-		return "user/login";
+		return "common/login";
 	}
 
 	@PostMapping("login")
 	@ResponseBody
-	public ResultVO<?> login(@Valid UserForm userForm) {
-		 boolean login = loginService.login(userForm);
+	public ResultVO<?> login(HttpServletResponse response,@Valid UserForm userForm) {
+		 boolean login = loginService.login(response,userForm);
 		 return ResultVOUtil.success(login);
 	}
 }

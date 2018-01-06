@@ -2,7 +2,7 @@ package com.bioodas.seckill.service;
 
 import com.bioodas.seckill.entity.SeckillUser;
 
-public interface SeckillUserService {
+public interface SeckillUserService extends BaseService<SeckillUser> {
 	
 	SeckillUser findById(String id);
 

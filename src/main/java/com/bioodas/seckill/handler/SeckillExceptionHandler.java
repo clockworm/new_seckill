@@ -1,7 +1,9 @@
 package com.bioodas.seckill.handler;
 
 import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.BindException;
 import org.springframework.validation.ObjectError;
@@ -17,6 +19,7 @@ import com.bioodas.seckill.exception.ResponseSpecialException;
 import com.bioodas.seckill.exception.SeckillException;
 import com.bioodas.seckill.util.ResultVOUtil;
 import com.bioodas.seckill.vo.ResultVO;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author TangLingYun
@@ -24,6 +27,7 @@ import com.bioodas.seckill.vo.ResultVO;
  * @date 2018年1月4日
  */
 @ControllerAdvice
+@Slf4j
 public class SeckillExceptionHandler {
 
 	/** 通用异常控制器 */
@@ -36,14 +40,15 @@ public class SeckillExceptionHandler {
 			ObjectError error = errors.get(0);
 			return ResultVOUtil.fail("参数错误:".concat(error.getDefaultMessage()));
 		}
+		log.error("异常控制器异常信息:{}",e);
 		return ResultVOUtil.error(ResultEnum.SERVER_ERROR.getCode(), ResultEnum.SERVER_ERROR.getMessage());
 	}
 	
 	/** 拦截登录异常 控制器 */
 	@ExceptionHandler(value = AuthorizeException.class)
-	@ResponseStatus(HttpStatus.FORBIDDEN)
 	public ModelAndView handlerAuthorizeException() {
-		return new ModelAndView("redirect:" + "登录页面");
+		log.warn("token失效或没有登录,跳转到登录页面");
+		return new ModelAndView("redirect:" + "/common/login");
 	}
 
 	/** 业务异常控制器 */
