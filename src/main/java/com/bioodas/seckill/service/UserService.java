@@ -2,10 +2,12 @@ package com.bioodas.seckill.service;
 
 import com.bioodas.seckill.entity.User;
 
-public interface UserService {
+public interface UserService extends BaseService<User> {
 	
 	User findById(String id);
-	
-	int insert(User user);
+
+	User login(String mobile, String password);
+
+	User findByMobile(String mobile);
 
 }

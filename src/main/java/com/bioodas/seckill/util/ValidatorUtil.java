@@ -2,6 +2,7 @@ package com.bioodas.seckill.util;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 import org.apache.commons.lang3.StringUtils;
 
 /**

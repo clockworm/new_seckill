@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bioodas.seckill.dao.ProductDao">
+  <resultMap id="BaseResultMap" type="com.bioodas.seckill.entity.Product">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="product_name" jdbcType="VARCHAR" property="productName" />
+    <result column="product_title" jdbcType="VARCHAR" property="productTitle" />
+    <result column="product_img" jdbcType="VARCHAR" property="productImg" />
+    <result column="product_price" jdbcType="DECIMAL" property="productPrice" />
+    <result column="product_stock" jdbcType="INTEGER" property="productStock" />
+    <result column="insert_time" jdbcType="TIMESTAMP" property="insertTime" />
+    <result column="last_update_time" jdbcType="TIMESTAMP" property="lastUpdateTime" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.bioodas.seckill.entity.Product">
+    <result column="product_detail" jdbcType="LONGVARCHAR" property="productDetail" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, product_name, product_title, product_img, product_price, product_stock, insert_time, 
+    last_update_time
+  </sql>
+  <sql id="Blob_Column_List">
+    product_detail
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from product
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from product
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.bioodas.seckill.entity.Product">
+    insert into product (id, product_name, product_title, 
+      product_img, product_price, product_stock, 
+      insert_time, last_update_time, product_detail
+      )
+    values (#{id,jdbcType=VARCHAR}, #{productName,jdbcType=VARCHAR}, #{productTitle,jdbcType=VARCHAR}, 
+      #{productImg,jdbcType=VARCHAR}, #{productPrice,jdbcType=DECIMAL}, #{productStock,jdbcType=INTEGER}, 
+      #{insertTime,jdbcType=TIMESTAMP}, #{lastUpdateTime,jdbcType=TIMESTAMP}, #{productDetail,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.bioodas.seckill.entity.Product">
+    insert into product
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="productName != null">
+        product_name,
+      </if>
+      <if test="productTitle != null">
+        product_title,
+      </if>
+      <if test="productImg != null">
+        product_img,
+      </if>
+      <if test="productPrice != null">
+        product_price,
+      </if>
+      <if test="productStock != null">
+        product_stock,
+      </if>
+      <if test="insertTime != null">
+        insert_time,
+      </if>
+      <if test="lastUpdateTime != null">
+        last_update_time,
+      </if>
+      <if test="productDetail != null">
+        product_detail,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="productName != null">
+        #{productName,jdbcType=VARCHAR},
+      </if>
+      <if test="productTitle != null">
+        #{productTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="productImg != null">
+        #{productImg,jdbcType=VARCHAR},
+      </if>
+      <if test="productPrice != null">
+        #{productPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="productStock != null">
+        #{productStock,jdbcType=INTEGER},
+      </if>
+      <if test="insertTime != null">
+        #{insertTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastUpdateTime != null">
+        #{lastUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="productDetail != null">
+        #{productDetail,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.bioodas.seckill.entity.Product">
+    update product
+    <set>
+      <if test="productName != null">
+        product_name = #{productName,jdbcType=VARCHAR},
+      </if>
+      <if test="productTitle != null">
+        product_title = #{productTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="productImg != null">
+        product_img = #{productImg,jdbcType=VARCHAR},
+      </if>
+      <if test="productPrice != null">
+        product_price = #{productPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="productStock != null">
+        product_stock = #{productStock,jdbcType=INTEGER},
+      </if>
+      <if test="insertTime != null">
+        insert_time = #{insertTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastUpdateTime != null">
+        last_update_time = #{lastUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="productDetail != null">
+        product_detail = #{productDetail,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.bioodas.seckill.entity.Product">
+    update product
+    set product_name = #{productName,jdbcType=VARCHAR},
+      product_title = #{productTitle,jdbcType=VARCHAR},
+      product_img = #{productImg,jdbcType=VARCHAR},
+      product_price = #{productPrice,jdbcType=DECIMAL},
+      product_stock = #{productStock,jdbcType=INTEGER},
+      insert_time = #{insertTime,jdbcType=TIMESTAMP},
+      last_update_time = #{lastUpdateTime,jdbcType=TIMESTAMP},
+      product_detail = #{productDetail,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.bioodas.seckill.entity.Product">
+    update product
+    set product_name = #{productName,jdbcType=VARCHAR},
+      product_title = #{productTitle,jdbcType=VARCHAR},
+      product_img = #{productImg,jdbcType=VARCHAR},
+      product_price = #{productPrice,jdbcType=DECIMAL},
+      product_stock = #{productStock,jdbcType=INTEGER},
+      insert_time = #{insertTime,jdbcType=TIMESTAMP},
+      last_update_time = #{lastUpdateTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+</mapper>

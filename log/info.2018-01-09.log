@@ -1,0 +1,10 @@
+2018-01-09 00:16:38.985 [main] INFO  org.springframework.boot.SpringApplication - Starting SpringApplication v1.5.8.RELEASE on Mick with PID 6724 (C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot\1.5.8.RELEASE\spring-boot-1.5.8.RELEASE.jar started by Administrator in E:\dev\seckill)
+2018-01-09 00:16:38.992 [main] INFO  org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+2018-01-09 00:16:39.465 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-09 00:16:39.698 [main] ERROR org.springframework.boot.SpringApplication - Application startup failed
+java.lang.IllegalArgumentException: Sources must not be empty
+	at org.springframework.util.Assert.notEmpty(Assert.java:277)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.main(SpringApplication.java:1134)

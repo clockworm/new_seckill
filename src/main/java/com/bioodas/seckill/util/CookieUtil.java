@@ -1,12 +1,14 @@
 package com.bioodas.seckill.util;
 
 
-import lombok.val;
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.HashMap;
-import java.util.Map;
+
+import lombok.val;
 
 /**
  * @author TangLingYun

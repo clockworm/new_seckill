@@ -13,12 +13,9 @@ public class UserServiceTest extends BaseTest{
 
 	@Test
 	public void testFindById() {
-		userService.findById("123");
+		User user = userService.findById("123");
+		System.err.println(user);
 	}
 
-	@Test
-	public void testInsert() {
-		userService.insert(new User("7891", "TangLingYun31"));
-	}
 
 }

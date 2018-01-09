@@ -13,7 +13,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import com.bioodas.seckill.constant.CookieConstant;
-import com.bioodas.seckill.entity.SeckillUser;
+import com.bioodas.seckill.entity.User;
 import com.bioodas.seckill.exception.AuthorizeException;
 import com.bioodas.seckill.util.CookieUtil;
 import com.bioodas.seckill.util.redis.RedisClient;
@@ -48,7 +48,7 @@ public class AuthorizeAspect {
 			log.warn("[登录效验] 服务端Cookie未找到token");
 			throw new AuthorizeException();
 		}
-		SeckillUser user = redisClient.get(TokenKey.generateKeyByToken,cookie.getValue(),SeckillUser.class);
+		User user = redisClient.get(TokenKey.generateKeyByToken,cookie.getValue(),User.class);
 		if(user == null){
 			log.warn("[登录效验] Redis端未找到token");
 			throw new AuthorizeException();

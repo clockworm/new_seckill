@@ -1,0 +1,7 @@
+2018-01-09 00:16:39.698 [main] ERROR org.springframework.boot.SpringApplication - Application startup failed
+java.lang.IllegalArgumentException: Sources must not be empty
+	at org.springframework.util.Assert.notEmpty(Assert.java:277)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.main(SpringApplication.java:1134)

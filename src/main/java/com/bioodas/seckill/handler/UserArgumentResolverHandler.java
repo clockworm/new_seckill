@@ -12,11 +12,13 @@ import org.springframework.web.bind.support.WebDataBinderFactory;
 import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.ModelAndViewContainer;
-import com.bioodas.seckill.entity.SeckillUser;
+
+import com.bioodas.seckill.entity.User;
 import com.bioodas.seckill.exception.AuthorizeException;
 import com.bioodas.seckill.util.CookieUtil;
 import com.bioodas.seckill.util.redis.RedisClient;
 import com.bioodas.seckill.util.redis.TokenKey;
+
 import lombok.extern.slf4j.Slf4j;
 
 @Component
@@ -35,7 +37,7 @@ public class UserArgumentResolverHandler implements HandlerMethodArgumentResolve
 	@Override
 	public boolean supportsParameter(MethodParameter arg0) {
 		Class<?> clazz = arg0.getParameterType();
-		return clazz == SeckillUser.class;
+		return clazz == User.class;
 	}
 
 	/**参数注入 赋值*/
@@ -52,10 +54,10 @@ public class UserArgumentResolverHandler implements HandlerMethodArgumentResolve
 			}
 			token = cookie.getValue();
 		}
-		SeckillUser seckillUser = redisClient.get(TokenKey.generateKeyByToken, token, SeckillUser.class);
-		redisClient.set(TokenKey.generateKeyByToken, token, seckillUser);
+		User user = redisClient.get(TokenKey.generateKeyByToken, token, User.class);
+		redisClient.set(TokenKey.generateKeyByToken, token, user);
 		CookieUtil.setCookie(response, TokenKey.TOKEN_KEY, token, TokenKey.generateKeyByToken.expireSeconds());
-		return seckillUser;
+		return user;
 	}
 
 }
