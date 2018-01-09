@@ -28,16 +28,16 @@
         </javaModelGenerator>
 
         <!-- *Mapper.xml 文件的位置 -->
-        <sqlMapGenerator targetPackage="com.bioodas.seckill.entity.mapper" targetProject="seckill">
+        <sqlMapGenerator targetPackage="mapper" targetProject="seckill/src/main/resources">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
         <!-- Mapper 接口文件的位置 -->
-        <javaClientGenerator targetPackage="mapper" targetProject="src/main/resources" type="XMLMAPPER">
+        <javaClientGenerator targetPackage="com.bioodas.seckill.dao" targetProject="seckill" type="XMLMAPPER">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
 
         <!-- mapperName是Dao接口名  生成后需要修改Mapper.xml文件 -->
-        <table tableName="seckill_product" mapperName="SeckillProductDao" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
+        <table tableName="user" mapperName="UserDao" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
     </context>
 </generatorConfiguration>

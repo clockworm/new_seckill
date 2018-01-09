@@ -5,8 +5,9 @@ import java.util.Date;
 import lombok.Data;
 import lombok.ToString;
 
-public @ToString @Data class User {
-
+@Data
+@ToString
+public class User {
 	private String id;
 	private String mobile;
 	private String nickname;
@@ -16,5 +17,4 @@ public @ToString @Data class User {
 	private Date registerDate;
 	private Date lastLoginDate;
 	private Integer loginCount;
-
 }
