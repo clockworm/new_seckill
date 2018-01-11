@@ -34,10 +34,6 @@ public class ProductServiceImpl implements ProductService {
 		return null;
 	}
 
-	@Override
-	public Product findById(String id) {
-		return productDao.selectByPrimaryKey(id);
-	}
 
 	@Override
 	public List<Product> findAll() {
@@ -47,6 +43,11 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public Page<Product> findByPage(Pageable page) {
 		return null;
+	}
+
+	@Override
+	public ProductVO findById(String id) {
+		return productDao.findById(id);
 	}
 	
 	

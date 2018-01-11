@@ -8,5 +8,7 @@ import com.bioodas.seckill.vo.ProductVO;
 public interface ProductService extends BaseService<Product>{
 	
 	  public List<ProductVO> list(); 
+	  
+	  public ProductVO findById(String id); 
 	
 }

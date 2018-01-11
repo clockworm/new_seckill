@@ -37,6 +37,11 @@
 		</dependency>
 
 		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+		</dependency>
+
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
@@ -165,7 +170,7 @@
 					<overwrite>true</overwrite>
 				</configuration>
 			</plugin>
-			
+
 		</plugins>
 	</build>
 
