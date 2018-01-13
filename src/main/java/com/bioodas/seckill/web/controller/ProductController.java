@@ -28,14 +28,14 @@ public class ProductController {
 	private ProductService productService; 
 	
 	@GetMapping("list")
-	public String list(Model model,User user) {
+	public String list(User user,Model model) {
 		List<ProductVO> list = productService.list();
 		model.addAttribute("products", list);
 		return "product/list";
 	}
 	
 	@GetMapping("detail/{productId}")
-	public String detail(Model model,User user,@PathVariable("productId") String productId) {
+	public String detail(User user,Model model,@PathVariable("productId") String productId) {
 		int second = 0;
 		ProductVO product = productService.findById(productId);
 		model.addAttribute("product", product);

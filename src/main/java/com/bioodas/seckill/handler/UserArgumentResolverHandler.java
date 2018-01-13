@@ -19,15 +19,13 @@ import com.bioodas.seckill.util.CookieUtil;
 import com.bioodas.seckill.util.redis.RedisClient;
 import com.bioodas.seckill.util.redis.TokenKey;
 
-import lombok.extern.slf4j.Slf4j;
 
-@Component
-@Slf4j
 /**
  * @author TangLingYun
  * @describe 如果用户登录  任意方法区参数带SeckillUser类型的 自动赋值 (参数自构建)
  * @date 2018年1月7日
  */
+@Component
 public class UserArgumentResolverHandler implements HandlerMethodArgumentResolver {
 
 	@Autowired
@@ -48,13 +46,11 @@ public class UserArgumentResolverHandler implements HandlerMethodArgumentResolve
 		String token = request.getParameter(TokenKey.TOKEN_KEY);
 		if (StringUtils.isBlank(token)) {
 			Cookie cookie = CookieUtil.getCookie(request, TokenKey.TOKEN_KEY);
-			if (cookie == null) {
-				log.warn("[获取用户信息失败]token缓存redis端失效过期或该用户没有登录");
-				throw new AuthorizeException();
-			}
+			if (cookie == null) throw new AuthorizeException();
 			token = cookie.getValue();
 		}
 		User user = redisClient.get(TokenKey.generateKeyByToken, token, User.class);
+		if(user == null) throw new AuthorizeException();
 		redisClient.set(TokenKey.generateKeyByToken, token, user);
 		CookieUtil.setCookie(response, TokenKey.TOKEN_KEY, token, TokenKey.generateKeyByToken.expireSeconds());
 		return user;

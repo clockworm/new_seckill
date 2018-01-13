@@ -34,7 +34,7 @@ public class AuthorizeAspect {
 	@Autowired
 	private RedisClient redisClient;
 
-	@Pointcut("execution(public  * com.bioodas.seckill.web.controller.*.*(..))" + "&& !execution(public  *  com.bioodas.seckill.web.controller.LoginController.*(..))")
+	@Pointcut("execution(public  * com.bioodas.seckill.web.controller.*.*(..))" + "&& !execution(public  *  com.bioodas.seckill.web.controller.LoginController.*(..))" + "&& !args(com.bioodas.seckill.entity.User,..)")
 	public void verify() {
 	}
 
