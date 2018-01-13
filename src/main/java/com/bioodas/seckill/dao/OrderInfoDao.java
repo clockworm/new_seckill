@@ -1,7 +1,9 @@
 package com.bioodas.seckill.dao;
 
+import org.apache.ibatis.annotations.Mapper;
 import com.bioodas.seckill.entity.OrderInfo;
 
+@Mapper
 public interface OrderInfoDao {
 	
 	int deleteByPrimaryKey(String id);

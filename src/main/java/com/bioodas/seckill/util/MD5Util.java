@@ -19,7 +19,7 @@ public class MD5Util {
 	
 	/**生成随机盐值*/
 	public static String genUniqueSalt() {
-		return KeyUtil.genUniqueKey();
+		return KeyUtil.genUniqueNumKey();
 	}
 
 	/**明文加密成表单MD5*/

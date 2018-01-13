@@ -23,7 +23,7 @@ public class UserDaoTest {
 
 	@Test
 	public void findById() throws Exception {
-		User user = userDao.findById("111");
+		User user = userDao.selectByPrimaryKey("111");
 		ResultVO<?> vo = ResultVOUtil.success(user);
 		log.info("{}", JsonUtil.toPrintJson(vo));
 	}

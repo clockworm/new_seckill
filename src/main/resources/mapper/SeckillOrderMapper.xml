@@ -23,12 +23,8 @@
     where id = #{id,jdbcType=VARCHAR}
   </delete>
   <insert id="insert" parameterType="com.bioodas.seckill.entity.SeckillOrder">
-    insert into seckill_order (id, user_id, order_id, 
-      product_id, create_time, update_time
-      )
-    values (#{id,jdbcType=VARCHAR}, #{userId,jdbcType=VARCHAR}, #{orderId,jdbcType=VARCHAR}, 
-      #{productId,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}
-      )
+    insert into seckill_order (id, user_id, order_id,product_id)
+    values (#{id,jdbcType=VARCHAR}, #{userId,jdbcType=VARCHAR}, #{orderId,jdbcType=VARCHAR}, #{productId,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.bioodas.seckill.entity.SeckillOrder">
     insert into seckill_order

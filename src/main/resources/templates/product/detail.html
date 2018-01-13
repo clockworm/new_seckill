@@ -45,9 +45,9 @@
         	<span th:if="${second eq -1}">秒杀已结束</span>
         </td>
         <td>
-        	<form id="seckill" method="post" action="../seckill/kill/{${product.id}}">
+        	<form id="seckill" method="post" action="../../kill">
         		<button class="btn btn-primary btn-block" type="submit" id="buyButton">立即秒杀</button>
-        		<!-- <input type="hidden" name="productId" th:value="${product.id}" /> -->
+        		<input type="hidden" name="productId" th:value="${product.id}" />
         	</form>
         </td>
      </tr>

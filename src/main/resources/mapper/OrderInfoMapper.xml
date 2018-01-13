@@ -33,14 +33,12 @@
 	<insert id="insert" parameterType="com.bioodas.seckill.entity.OrderInfo">
 		insert into order_info (id, user_id, product_id,
 		delivery_addr_id, product_name, product_price,
-		product_quantity, order_channel, status,
-		create_time, update_time)
+		product_quantity, order_channel, status)
 		values (#{id,jdbcType=VARCHAR}, #{userId,jdbcType=VARCHAR},
 		#{productId,jdbcType=VARCHAR},
 		#{deliveryAddrId,jdbcType=VARCHAR}, #{productName,jdbcType=VARCHAR}, #{productPrice,jdbcType=DECIMAL},
 		#{productQuantity,jdbcType=INTEGER}, #{orderChannel,jdbcType=TINYINT},
-		#{status,jdbcType=TINYINT},
-		#{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
+		#{status,jdbcType=TINYINT})
 	</insert>
 	<insert id="insertSelective" parameterType="com.bioodas.seckill.entity.OrderInfo">
 		insert into order_info

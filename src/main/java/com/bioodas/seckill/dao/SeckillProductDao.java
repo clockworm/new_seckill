@@ -1,7 +1,10 @@
 package com.bioodas.seckill.dao;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Update;
 import com.bioodas.seckill.entity.SeckillProduct;
 
+@Mapper
 public interface SeckillProductDao {
     int deleteByPrimaryKey(String id);
 
@@ -14,4 +17,7 @@ public interface SeckillProductDao {
     int updateByPrimaryKeySelective(SeckillProduct record);
 
     int updateByPrimaryKey(SeckillProduct record);
+    
+    @Update("update seckill_product set seckill_stock = seckill_stock -1 where product_id = #{productId}")
+	int reduceStock(SeckillProduct seckillProduct);
 }

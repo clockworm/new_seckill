@@ -1,0 +1,1493 @@
+2018-01-14 00:02:17.906 [main] INFO  com.bioodas.seckill.MainApplication - Starting MainApplication on Mick with PID 6284 (E:\dev\seckill\target\classes started by Administrator in E:\dev\seckill)
+2018-01-14 00:02:17.920 [main] INFO  com.bioodas.seckill.MainApplication - No active profile set, falling back to default profiles: default
+2018-01-14 00:02:18.553 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@589da3f3: startup date [Sun Jan 14 00:02:18 CST 2018]; root of context hierarchy
+2018-01-14 00:02:18.615 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-14 00:02:19.971 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-14 00:02:21.131 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-14 00:02:22.646 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-01-14 00:02:22.669 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-14 00:02:22.671 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-14 00:02:22.872 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/seckill] - Initializing Spring embedded WebApplicationContext
+2018-01-14 00:02:22.872 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4319 ms
+2018-01-14 00:02:23.170 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-14 00:02:23.180 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-14 00:02:23.181 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-14 00:02:23.181 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-14 00:02:23.182 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-14 00:02:24.473 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl': Unsatisfied dependency expressed through field 'orderInfoDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.OrderInfoDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-01-14 00:02:24.478 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2018-01-14 00:02:24.543 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-01-14 00:02:24.702 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field orderInfoDao in com.bioodas.seckill.service.impl.OrderServiceImpl required a bean of type 'com.bioodas.seckill.dao.OrderInfoDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.bioodas.seckill.dao.OrderInfoDao' in your configuration.
+
+2018-01-14 00:06:02.064 [main] INFO  com.bioodas.seckill.MainApplication - Starting MainApplication on Mick with PID 6052 (E:\dev\seckill\target\classes started by Administrator in E:\dev\seckill)
+2018-01-14 00:06:02.069 [main] INFO  com.bioodas.seckill.MainApplication - No active profile set, falling back to default profiles: default
+2018-01-14 00:06:02.441 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@96def03: startup date [Sun Jan 14 00:06:02 CST 2018]; root of context hierarchy
+2018-01-14 00:06:02.676 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-14 00:06:03.576 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-14 00:06:04.070 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-14 00:06:05.221 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-01-14 00:06:05.243 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-14 00:06:05.245 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-14 00:06:05.442 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/seckill] - Initializing Spring embedded WebApplicationContext
+2018-01-14 00:06:05.442 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3001 ms
+2018-01-14 00:06:05.673 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-14 00:06:05.679 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-14 00:06:05.680 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-14 00:06:05.680 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-14 00:06:05.681 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-14 00:06:06.390 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl': Unsatisfied dependency expressed through field 'orderInfoDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.OrderInfoDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-01-14 00:06:06.394 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2018-01-14 00:06:06.432 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-01-14 00:06:06.549 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field orderInfoDao in com.bioodas.seckill.service.impl.OrderServiceImpl required a bean of type 'com.bioodas.seckill.dao.OrderInfoDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.bioodas.seckill.dao.OrderInfoDao' in your configuration.
+
+2018-01-14 00:07:31.853 [main] INFO  com.bioodas.seckill.MainApplication - Starting MainApplication on Mick with PID 8416 (E:\dev\seckill\target\classes started by Administrator in E:\dev\seckill)
+2018-01-14 00:07:31.858 [main] INFO  com.bioodas.seckill.MainApplication - No active profile set, falling back to default profiles: default
+2018-01-14 00:07:32.412 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@96def03: startup date [Sun Jan 14 00:07:32 CST 2018]; root of context hierarchy
+2018-01-14 00:07:32.507 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-14 00:07:33.743 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-14 00:07:34.276 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-14 00:07:35.365 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-01-14 00:07:35.381 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-14 00:07:35.382 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-14 00:07:35.578 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/seckill] - Initializing Spring embedded WebApplicationContext
+2018-01-14 00:07:35.579 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3167 ms
+2018-01-14 00:07:35.838 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-14 00:07:35.845 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-14 00:07:35.845 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-14 00:07:35.846 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-14 00:07:35.846 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-14 00:07:36.641 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'seckillOrderServiceImpl': Unsatisfied dependency expressed through field 'seckillOrderDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-01-14 00:07:36.645 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2018-01-14 00:07:36.687 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-01-14 00:07:36.810 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field seckillOrderDao in com.bioodas.seckill.service.impl.SeckillOrderServiceImpl required a bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' in your configuration.
+
+2018-01-14 00:08:33.465 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bioodas.seckill.dao.UserDaoTest], using SpringBootContextLoader
+2018-01-14 00:08:33.479 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.bioodas.seckill.dao.UserDaoTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-01-14 00:08:33.481 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.bioodas.seckill.dao.UserDaoTest]: UserDaoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-01-14 00:08:33.744 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.bioodas.seckill.MainApplication for test class com.bioodas.seckill.dao.UserDaoTest
+2018-01-14 00:08:33.759 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-01-14 00:08:33.796 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@65466a6a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4ddced80, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1534f01b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@78e117e3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2ea227af, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4386f16, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@363ee3a2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4690b489, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@79b06cab, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3eb7fc54, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7f552bd3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3c22fc4c]
+2018-01-14 00:08:34.644 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - Starting UserDaoTest on Mick with PID 828 (started by Administrator in E:\dev\seckill)
+2018-01-14 00:08:34.648 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - No active profile set, falling back to default profiles: default
+2018-01-14 00:08:35.146 [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Sun Jan 14 00:08:35 CST 2018]; root of context hierarchy
+2018-01-14 00:08:35.188 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-14 00:08:36.253 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-14 00:08:36.878 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-14 00:08:37.981 [main] WARN  o.s.w.context.support.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'seckillOrderServiceImpl': Unsatisfied dependency expressed through field 'seckillOrderDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-01-14 00:08:37.995 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-01-14 00:08:38.214 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field seckillOrderDao in com.bioodas.seckill.service.impl.SeckillOrderServiceImpl required a bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' in your configuration.
+
+2018-01-14 00:08:38.219 [main] ERROR o.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@65466a6a] to prepare test instance [com.bioodas.seckill.dao.UserDaoTest@3ad85136]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'seckillOrderServiceImpl': Unsatisfied dependency expressed through field 'seckillOrderDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1493)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 43 common frames omitted
+2018-01-14 00:09:09.449 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bioodas.seckill.dao.UserDaoTest], using SpringBootContextLoader
+2018-01-14 00:09:09.458 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.bioodas.seckill.dao.UserDaoTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-01-14 00:09:09.459 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.bioodas.seckill.dao.UserDaoTest]: UserDaoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-01-14 00:09:09.595 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.bioodas.seckill.MainApplication for test class com.bioodas.seckill.dao.UserDaoTest
+2018-01-14 00:09:09.605 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-01-14 00:09:09.630 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@65466a6a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4ddced80, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1534f01b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@78e117e3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2ea227af, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4386f16, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@363ee3a2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4690b489, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@79b06cab, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3eb7fc54, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7f552bd3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3c22fc4c]
+2018-01-14 00:09:10.133 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - Starting UserDaoTest on Mick with PID 2936 (started by Administrator in E:\dev\seckill)
+2018-01-14 00:09:10.135 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - No active profile set, falling back to default profiles: default
+2018-01-14 00:09:10.528 [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Sun Jan 14 00:09:10 CST 2018]; root of context hierarchy
+2018-01-14 00:09:10.597 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-14 00:09:11.602 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-14 00:09:12.150 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-14 00:09:13.546 [main] WARN  o.s.w.context.support.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'seckillOrderServiceImpl': Unsatisfied dependency expressed through field 'seckillOrderDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-01-14 00:09:13.729 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-01-14 00:09:13.880 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field seckillOrderDao in com.bioodas.seckill.service.impl.SeckillOrderServiceImpl required a bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' in your configuration.
+
+2018-01-14 00:09:13.885 [main] ERROR o.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@65466a6a] to prepare test instance [com.bioodas.seckill.dao.UserDaoTest@5b3bb1f7]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'seckillOrderServiceImpl': Unsatisfied dependency expressed through field 'seckillOrderDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1493)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 43 common frames omitted
+2018-01-14 00:09:44.036 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bioodas.seckill.dao.UserDaoTest], using SpringBootContextLoader
+2018-01-14 00:09:44.048 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.bioodas.seckill.dao.UserDaoTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-01-14 00:09:44.050 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.bioodas.seckill.dao.UserDaoTest]: UserDaoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-01-14 00:09:44.420 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.bioodas.seckill.MainApplication for test class com.bioodas.seckill.dao.UserDaoTest
+2018-01-14 00:09:44.447 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-01-14 00:09:44.504 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@65466a6a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4ddced80, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1534f01b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@78e117e3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2ea227af, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4386f16, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@363ee3a2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4690b489, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@79b06cab, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3eb7fc54, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7f552bd3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3c22fc4c]
+2018-01-14 00:09:45.367 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - Starting UserDaoTest on Mick with PID 3996 (started by Administrator in E:\dev\seckill)
+2018-01-14 00:09:45.370 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - No active profile set, falling back to default profiles: default
+2018-01-14 00:09:45.876 [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Sun Jan 14 00:09:45 CST 2018]; root of context hierarchy
+2018-01-14 00:09:45.995 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-14 00:09:47.193 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-14 00:09:47.899 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-14 00:09:49.290 [main] WARN  o.s.w.context.support.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'seckillOrderServiceImpl': Unsatisfied dependency expressed through field 'seckillOrderDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-01-14 00:09:49.452 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-01-14 00:09:49.603 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field seckillOrderDao in com.bioodas.seckill.service.impl.SeckillOrderServiceImpl required a bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' in your configuration.
+
+2018-01-14 00:09:49.608 [main] ERROR o.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@65466a6a] to prepare test instance [com.bioodas.seckill.dao.UserDaoTest@6c101cc1]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'seckillOrderServiceImpl': Unsatisfied dependency expressed through field 'seckillOrderDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1493)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 43 common frames omitted
+2018-01-14 00:14:13.310 [main] INFO  com.bioodas.seckill.MainApplication - Starting MainApplication on Mick with PID 8996 (E:\dev\seckill\target\classes started by Administrator in E:\dev\seckill)
+2018-01-14 00:14:13.314 [main] INFO  com.bioodas.seckill.MainApplication - No active profile set, falling back to default profiles: default
+2018-01-14 00:14:13.806 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-14 00:14:13.846 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@96def03: startup date [Sun Jan 14 00:14:13 CST 2018]; root of context hierarchy
+2018-01-14 00:14:14.886 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-14 00:14:15.389 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-14 00:14:16.590 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-01-14 00:14:16.619 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-14 00:14:16.620 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-14 00:14:16.807 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/seckill] - Initializing Spring embedded WebApplicationContext
+2018-01-14 00:14:16.807 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2962 ms
+2018-01-14 00:14:17.058 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-14 00:14:17.065 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-14 00:14:17.065 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-14 00:14:17.066 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-14 00:14:17.066 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-14 00:14:18.022 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'seckillOrderServiceImpl': Unsatisfied dependency expressed through field 'seckillOrderDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-01-14 00:14:18.025 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2018-01-14 00:14:18.066 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-01-14 00:14:18.179 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field seckillOrderDao in com.bioodas.seckill.service.impl.SeckillOrderServiceImpl required a bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.bioodas.seckill.dao.SeckillOrderDao' in your configuration.
+
+2018-01-14 00:21:09.527 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bioodas.seckill.dao.UserDaoTest], using SpringBootContextLoader
+2018-01-14 00:21:09.541 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.bioodas.seckill.dao.UserDaoTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-01-14 00:21:09.542 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.bioodas.seckill.dao.UserDaoTest]: UserDaoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-01-14 00:21:09.765 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.bioodas.seckill.MainApplication for test class com.bioodas.seckill.dao.UserDaoTest
+2018-01-14 00:21:09.781 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-01-14 00:21:09.818 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@65466a6a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4ddced80, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1534f01b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@78e117e3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2ea227af, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4386f16, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@363ee3a2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4690b489, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@79b06cab, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3eb7fc54, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7f552bd3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3c22fc4c]
+2018-01-14 00:21:10.449 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - Starting UserDaoTest on Mick with PID 7796 (started by Administrator in E:\dev\seckill)
+2018-01-14 00:21:10.453 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - No active profile set, falling back to default profiles: default
+2018-01-14 00:21:10.957 [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Sun Jan 14 00:21:10 CST 2018]; root of context hierarchy
+2018-01-14 00:21:10.959 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-14 00:21:11.996 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-14 00:21:12.549 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-14 00:21:13.895 [main] WARN  o.s.w.context.support.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl': Unsatisfied dependency expressed through field 'orderInfoDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.OrderInfoDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-01-14 00:21:13.906 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-01-14 00:21:14.223 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field orderInfoDao in com.bioodas.seckill.service.impl.OrderServiceImpl required a bean of type 'com.bioodas.seckill.dao.OrderInfoDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.bioodas.seckill.dao.OrderInfoDao' in your configuration.
+
+2018-01-14 00:21:14.228 [main] ERROR o.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@65466a6a] to prepare test instance [com.bioodas.seckill.dao.UserDaoTest@57cb70be]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl': Unsatisfied dependency expressed through field 'orderInfoDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.OrderInfoDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.OrderInfoDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1493)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 43 common frames omitted
+2018-01-14 00:22:36.294 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bioodas.seckill.dao.UserDaoTest], using SpringBootContextLoader
+2018-01-14 00:22:36.319 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.bioodas.seckill.dao.UserDaoTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-01-14 00:22:36.321 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.bioodas.seckill.dao.UserDaoTest]: UserDaoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-01-14 00:22:36.704 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.bioodas.seckill.MainApplication for test class com.bioodas.seckill.dao.UserDaoTest
+2018-01-14 00:22:36.734 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-01-14 00:22:36.795 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@65466a6a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4ddced80, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1534f01b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@78e117e3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2ea227af, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4386f16, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@363ee3a2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4690b489, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@79b06cab, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3eb7fc54, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7f552bd3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3c22fc4c]
+2018-01-14 00:22:37.706 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - Starting UserDaoTest on Mick with PID 5128 (started by Administrator in E:\dev\seckill)
+2018-01-14 00:22:37.713 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - No active profile set, falling back to default profiles: default
+2018-01-14 00:22:38.133 [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Sun Jan 14 00:22:38 CST 2018]; root of context hierarchy
+2018-01-14 00:22:38.359 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-14 00:22:39.484 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-14 00:22:40.097 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-14 00:22:41.414 [main] WARN  o.s.w.context.support.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl': Unsatisfied dependency expressed through field 'orderInfoDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.OrderInfoDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-01-14 00:22:41.426 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-01-14 00:22:41.734 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field orderInfoDao in com.bioodas.seckill.service.impl.OrderServiceImpl required a bean of type 'com.bioodas.seckill.dao.OrderInfoDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.bioodas.seckill.dao.OrderInfoDao' in your configuration.
+
+2018-01-14 00:22:41.739 [main] ERROR o.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@65466a6a] to prepare test instance [com.bioodas.seckill.dao.UserDaoTest@1d12e953]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl': Unsatisfied dependency expressed through field 'orderInfoDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.OrderInfoDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.OrderInfoDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1493)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 43 common frames omitted
+2018-01-14 00:25:56.692 [main] INFO  com.bioodas.seckill.MainApplication - Starting MainApplication on Mick with PID 7136 (E:\dev\seckill\target\classes started by Administrator in E:\dev\seckill)
+2018-01-14 00:25:56.696 [main] INFO  com.bioodas.seckill.MainApplication - No active profile set, falling back to default profiles: default
+2018-01-14 00:25:57.172 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@96def03: startup date [Sun Jan 14 00:25:57 CST 2018]; root of context hierarchy
+2018-01-14 00:25:57.232 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-14 00:25:58.095 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[classpath:mapper/*.xml]' package. Please check your configuration.
+2018-01-14 00:25:58.321 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-14 00:25:58.781 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-14 00:26:00.117 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-01-14 00:26:00.157 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-14 00:26:00.160 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-14 00:26:00.609 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/seckill] - Initializing Spring embedded WebApplicationContext
+2018-01-14 00:26:00.610 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3439 ms
+2018-01-14 00:26:01.041 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-14 00:26:01.052 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-14 00:26:01.054 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-14 00:26:01.054 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-14 00:26:01.054 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-14 00:26:02.336 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl': Unsatisfied dependency expressed through field 'orderInfoDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bioodas.seckill.dao.OrderInfoDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-01-14 00:26:02.342 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2018-01-14 00:26:02.388 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-01-14 00:26:02.533 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field orderInfoDao in com.bioodas.seckill.service.impl.OrderServiceImpl required a bean of type 'com.bioodas.seckill.dao.OrderInfoDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.bioodas.seckill.dao.OrderInfoDao' in your configuration.
+
+2018-01-14 00:28:21.218 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bioodas.seckill.dao.UserDaoTest], using SpringBootContextLoader
+2018-01-14 00:28:21.233 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.bioodas.seckill.dao.UserDaoTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-01-14 00:28:21.235 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.bioodas.seckill.dao.UserDaoTest]: UserDaoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-01-14 00:28:21.502 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.bioodas.seckill.MainApplication for test class com.bioodas.seckill.dao.UserDaoTest
+2018-01-14 00:28:21.516 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-01-14 00:28:21.551 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@65466a6a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4ddced80, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1534f01b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@78e117e3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2ea227af, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4386f16, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@363ee3a2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4690b489, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@79b06cab, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3eb7fc54, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7f552bd3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3c22fc4c]
+2018-01-14 00:28:22.189 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - Starting UserDaoTest on Mick with PID 5848 (started by Administrator in E:\dev\seckill)
+2018-01-14 00:28:22.190 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - No active profile set, falling back to default profiles: default
+2018-01-14 00:28:22.571 [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Sun Jan 14 00:28:22 CST 2018]; root of context hierarchy
+2018-01-14 00:28:22.748 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-14 00:28:23.723 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-14 00:28:24.296 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-14 00:28:26.649 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Sun Jan 14 00:28:22 CST 2018]; root of context hierarchy
+2018-01-14 00:28:26.766 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/common/login],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.LoginController.index()
+2018-01-14 00:28:26.768 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/common/login],methods=[POST]}" onto public com.bioodas.seckill.vo.ResultVO<?> com.bioodas.seckill.web.controller.LoginController.login(javax.servlet.http.HttpServletResponse,com.bioodas.seckill.web.form.UserForm)
+2018-01-14 00:28:26.769 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/list],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.ProductController.list(org.springframework.ui.Model,com.bioodas.seckill.entity.User)
+2018-01-14 00:28:26.769 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/detail/{productId}],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.ProductController.detail(org.springframework.ui.Model,com.bioodas.seckill.entity.User,java.lang.String)
+2018-01-14 00:28:26.770 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/test],methods=[GET]}" onto public java.lang.Object com.bioodas.seckill.web.controller.SampleController.thymeleaf()
+2018-01-14 00:28:26.771 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seckill/kill/{productId}],methods=[POST]}" onto public java.lang.String com.bioodas.seckill.web.controller.SeckillController.kill(com.bioodas.seckill.entity.User,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-01-14 00:28:26.773 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-14 00:28:26.773 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-14 00:28:26.848 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:28:26.849 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:28:26.882 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in seckillExceptionHandler
+2018-01-14 00:28:26.926 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:28:28.182 [main] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-01-14 00:28:29.196 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - Started UserDaoTest in 7.47 seconds (JVM running for 9.276)
+2018-01-14 00:28:29.304 [Thread-4] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Sun Jan 14 00:28:22 CST 2018]; root of context hierarchy
+2018-01-14 00:28:49.550 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bioodas.seckill.dao.UserDaoTest], using SpringBootContextLoader
+2018-01-14 00:28:49.564 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.bioodas.seckill.dao.UserDaoTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-01-14 00:28:49.565 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.bioodas.seckill.dao.UserDaoTest]: UserDaoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-01-14 00:28:49.795 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.bioodas.seckill.MainApplication for test class com.bioodas.seckill.dao.UserDaoTest
+2018-01-14 00:28:49.811 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-01-14 00:28:49.846 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@65466a6a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4ddced80, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1534f01b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@78e117e3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2ea227af, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4386f16, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@363ee3a2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4690b489, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@79b06cab, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3eb7fc54, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7f552bd3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3c22fc4c]
+2018-01-14 00:28:50.444 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - Starting UserDaoTest on Mick with PID 3628 (started by Administrator in E:\dev\seckill)
+2018-01-14 00:28:50.447 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - No active profile set, falling back to default profiles: default
+2018-01-14 00:28:50.852 [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Sun Jan 14 00:28:50 CST 2018]; root of context hierarchy
+2018-01-14 00:28:50.999 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-14 00:28:52.098 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-14 00:28:52.638 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-14 00:28:55.037 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Sun Jan 14 00:28:50 CST 2018]; root of context hierarchy
+2018-01-14 00:28:55.158 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/common/login],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.LoginController.index()
+2018-01-14 00:28:55.160 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/common/login],methods=[POST]}" onto public com.bioodas.seckill.vo.ResultVO<?> com.bioodas.seckill.web.controller.LoginController.login(javax.servlet.http.HttpServletResponse,com.bioodas.seckill.web.form.UserForm)
+2018-01-14 00:28:55.162 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/list],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.ProductController.list(org.springframework.ui.Model,com.bioodas.seckill.entity.User)
+2018-01-14 00:28:55.163 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/detail/{productId}],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.ProductController.detail(org.springframework.ui.Model,com.bioodas.seckill.entity.User,java.lang.String)
+2018-01-14 00:28:55.164 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/test],methods=[GET]}" onto public java.lang.Object com.bioodas.seckill.web.controller.SampleController.thymeleaf()
+2018-01-14 00:28:55.165 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seckill/kill/{productId}],methods=[POST]}" onto public java.lang.String com.bioodas.seckill.web.controller.SeckillController.kill(com.bioodas.seckill.entity.User,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-01-14 00:28:55.168 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-14 00:28:55.168 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-14 00:28:55.233 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:28:55.233 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:28:55.269 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in seckillExceptionHandler
+2018-01-14 00:28:55.309 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:28:56.313 [main] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-01-14 00:28:56.671 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - Started UserDaoTest in 6.647 seconds (JVM running for 8.432)
+2018-01-14 00:28:56.912 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-01-14 00:28:57.831 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - com.bioodas.seckill.vo.ResultVO={
+  "code": 0,
+  "message": "成功",
+  "data": {
+    "id": "111",
+    "mobile": "17783253569",
+    "nickname": "tanglingyun",
+    "password": "37a0d56bffb1524b9f8719e0a1faa942",
+    "salt": "1514742677242850681",
+    "loginCount": 0
+  }
+}
+2018-01-14 00:28:57.979 [Thread-4] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Sun Jan 14 00:28:50 CST 2018]; root of context hierarchy
+2018-01-14 00:28:58.039 [Thread-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-01-14 00:29:21.427 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bioodas.seckill.dao.UserDaoTest], using SpringBootContextLoader
+2018-01-14 00:29:21.438 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.bioodas.seckill.dao.UserDaoTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-01-14 00:29:21.440 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.bioodas.seckill.dao.UserDaoTest]: UserDaoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-01-14 00:29:21.637 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.bioodas.seckill.MainApplication for test class com.bioodas.seckill.dao.UserDaoTest
+2018-01-14 00:29:21.650 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-01-14 00:29:21.682 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@65466a6a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4ddced80, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1534f01b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@78e117e3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2ea227af, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4386f16, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@363ee3a2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4690b489, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@79b06cab, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3eb7fc54, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7f552bd3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3c22fc4c]
+2018-01-14 00:29:22.248 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - Starting UserDaoTest on Mick with PID 1372 (started by Administrator in E:\dev\seckill)
+2018-01-14 00:29:22.251 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - No active profile set, falling back to default profiles: default
+2018-01-14 00:29:22.732 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-14 00:29:22.753 [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Sun Jan 14 00:29:22 CST 2018]; root of context hierarchy
+2018-01-14 00:29:23.833 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-14 00:29:24.513 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-14 00:29:27.046 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Sun Jan 14 00:29:22 CST 2018]; root of context hierarchy
+2018-01-14 00:29:27.157 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/common/login],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.LoginController.index()
+2018-01-14 00:29:27.159 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/common/login],methods=[POST]}" onto public com.bioodas.seckill.vo.ResultVO<?> com.bioodas.seckill.web.controller.LoginController.login(javax.servlet.http.HttpServletResponse,com.bioodas.seckill.web.form.UserForm)
+2018-01-14 00:29:27.161 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/list],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.ProductController.list(org.springframework.ui.Model,com.bioodas.seckill.entity.User)
+2018-01-14 00:29:27.162 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/detail/{productId}],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.ProductController.detail(org.springframework.ui.Model,com.bioodas.seckill.entity.User,java.lang.String)
+2018-01-14 00:29:27.164 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/test],methods=[GET]}" onto public java.lang.Object com.bioodas.seckill.web.controller.SampleController.thymeleaf()
+2018-01-14 00:29:27.165 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seckill/kill/{productId}],methods=[POST]}" onto public java.lang.String com.bioodas.seckill.web.controller.SeckillController.kill(com.bioodas.seckill.entity.User,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-01-14 00:29:27.169 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-14 00:29:27.169 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-14 00:29:27.241 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:29:27.241 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:29:27.274 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in seckillExceptionHandler
+2018-01-14 00:29:27.319 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:29:28.369 [main] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-01-14 00:29:28.715 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - Started UserDaoTest in 6.875 seconds (JVM running for 8.478)
+2018-01-14 00:29:28.905 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-01-14 00:29:29.787 [main] INFO  com.bioodas.seckill.dao.UserDaoTest - com.bioodas.seckill.vo.ResultVO={
+  "code": 0,
+  "message": "成功",
+  "data": {
+    "id": "111",
+    "mobile": "17783253569",
+    "nickname": "tanglingyun",
+    "password": "37a0d56bffb1524b9f8719e0a1faa942",
+    "salt": "1514742677242850681",
+    "loginCount": 0
+  }
+}
+2018-01-14 00:29:29.840 [Thread-4] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@7c711375: startup date [Sun Jan 14 00:29:22 CST 2018]; root of context hierarchy
+2018-01-14 00:29:29.870 [Thread-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-01-14 00:29:57.736 [main] INFO  com.bioodas.seckill.MainApplication - Starting MainApplication on Mick with PID 8984 (E:\dev\seckill\target\classes started by Administrator in E:\dev\seckill)
+2018-01-14 00:29:57.744 [main] INFO  com.bioodas.seckill.MainApplication - No active profile set, falling back to default profiles: default
+2018-01-14 00:29:58.217 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@589da3f3: startup date [Sun Jan 14 00:29:58 CST 2018]; root of context hierarchy
+2018-01-14 00:29:58.381 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-14 00:29:59.826 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-14 00:30:00.322 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-14 00:30:01.782 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-01-14 00:30:01.812 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-14 00:30:01.814 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-14 00:30:02.036 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/seckill] - Initializing Spring embedded WebApplicationContext
+2018-01-14 00:30:02.036 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3819 ms
+2018-01-14 00:30:02.360 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-14 00:30:02.367 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-14 00:30:02.368 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-14 00:30:02.368 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-14 00:30:02.368 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-14 00:30:04.292 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@589da3f3: startup date [Sun Jan 14 00:29:58 CST 2018]; root of context hierarchy
+2018-01-14 00:30:04.430 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/common/login],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.LoginController.index()
+2018-01-14 00:30:04.432 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/common/login],methods=[POST]}" onto public com.bioodas.seckill.vo.ResultVO<?> com.bioodas.seckill.web.controller.LoginController.login(javax.servlet.http.HttpServletResponse,com.bioodas.seckill.web.form.UserForm)
+2018-01-14 00:30:04.434 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/list],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.ProductController.list(org.springframework.ui.Model,com.bioodas.seckill.entity.User)
+2018-01-14 00:30:04.434 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/detail/{productId}],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.ProductController.detail(org.springframework.ui.Model,com.bioodas.seckill.entity.User,java.lang.String)
+2018-01-14 00:30:04.435 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/test],methods=[GET]}" onto public java.lang.Object com.bioodas.seckill.web.controller.SampleController.thymeleaf()
+2018-01-14 00:30:04.437 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seckill/kill/{productId}],methods=[POST]}" onto public java.lang.String com.bioodas.seckill.web.controller.SeckillController.kill(com.bioodas.seckill.entity.User,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-01-14 00:30:04.440 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-14 00:30:04.441 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-14 00:30:04.521 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:30:04.522 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:30:04.557 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in seckillExceptionHandler
+2018-01-14 00:30:04.613 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:30:05.854 [main] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-01-14 00:30:06.499 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-14 00:30:06.501 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-14 00:30:06.509 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-14 00:30:06.564 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-14 00:30:06.585 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-01-14 00:30:06.610 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-14 00:30:06.673 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-01-14 00:30:06.692 [main] INFO  com.bioodas.seckill.MainApplication - Started MainApplication in 9.55 seconds (JVM running for 11.396)
+2018-01-14 00:30:20.508 [http-nio-8080-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/seckill] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-14 00:30:20.509 [http-nio-8080-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-14 00:30:20.597 [http-nio-8080-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 88 ms
+2018-01-14 00:30:41.169 [http-nio-8080-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-01-14 00:30:41.379 [http-nio-8080-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-01-14 00:30:41.379 [http-nio-8080-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-01-14 00:30:41.379 [http-nio-8080-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-01-14 00:30:41.379 [http-nio-8080-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-01-14 00:30:41.394 [http-nio-8080-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-01-14 00:30:41.394 [http-nio-8080-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-01-14 00:30:45.765 [http-nio-8080-exec-1] INFO  com.bioodas.seckill.service.impl.LoginServiceImpl - 17783253569:5ce6b5edb7d11813fb2b62bc2fdb6330
+2018-01-14 00:30:46.029 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-01-14 00:30:47.153 [http-nio-8080-exec-1] INFO  com.bioodas.seckill.service.impl.LoginServiceImpl - com.bioodas.seckill.entity.User={
+  "id": "111",
+  "mobile": "17783253569",
+  "nickname": "tanglingyun",
+  "password": "37a0d56bffb1524b9f8719e0a1faa942",
+  "salt": "1514742677242850681",
+  "loginCount": 0
+}
+2018-01-14 00:30:47.168 [http-nio-8080-exec-1] INFO  com.bioodas.seckill.service.impl.LoginServiceImpl - calcPass:37a0d56bffb1524b9f8719e0a1faa942
+2018-01-14 00:33:01.289 [main] INFO  com.bioodas.seckill.MainApplication - Starting MainApplication on Mick with PID 6148 (E:\dev\seckill\target\classes started by Administrator in E:\dev\seckill)
+2018-01-14 00:33:01.300 [main] INFO  com.bioodas.seckill.MainApplication - No active profile set, falling back to default profiles: default
+2018-01-14 00:33:01.903 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-14 00:33:01.986 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@589da3f3: startup date [Sun Jan 14 00:33:01 CST 2018]; root of context hierarchy
+2018-01-14 00:33:03.183 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-14 00:33:03.738 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-14 00:33:05.354 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-01-14 00:33:05.373 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-14 00:33:05.375 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-14 00:33:05.617 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/seckill] - Initializing Spring embedded WebApplicationContext
+2018-01-14 00:33:05.617 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3631 ms
+2018-01-14 00:33:05.903 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-14 00:33:05.912 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-14 00:33:05.913 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-14 00:33:05.913 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-14 00:33:05.913 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-14 00:33:07.672 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@589da3f3: startup date [Sun Jan 14 00:33:01 CST 2018]; root of context hierarchy
+2018-01-14 00:33:07.793 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/common/login],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.LoginController.index()
+2018-01-14 00:33:07.795 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/common/login],methods=[POST]}" onto public com.bioodas.seckill.vo.ResultVO<?> com.bioodas.seckill.web.controller.LoginController.login(javax.servlet.http.HttpServletResponse,com.bioodas.seckill.web.form.UserForm)
+2018-01-14 00:33:07.797 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/list],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.ProductController.list(org.springframework.ui.Model,com.bioodas.seckill.entity.User)
+2018-01-14 00:33:07.797 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/detail/{productId}],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.ProductController.detail(org.springframework.ui.Model,com.bioodas.seckill.entity.User,java.lang.String)
+2018-01-14 00:33:07.798 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/test],methods=[GET]}" onto public java.lang.Object com.bioodas.seckill.web.controller.SampleController.thymeleaf()
+2018-01-14 00:33:07.799 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/kill/{productId}],methods=[POST]}" onto public java.lang.String com.bioodas.seckill.web.controller.SeckillController.kill(com.bioodas.seckill.entity.User,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-01-14 00:33:07.802 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-14 00:33:07.804 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-14 00:33:07.886 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:33:07.886 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:33:07.917 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in seckillExceptionHandler
+2018-01-14 00:33:07.970 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:33:09.268 [main] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-01-14 00:33:09.875 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-14 00:33:09.877 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-14 00:33:09.884 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-14 00:33:09.902 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-14 00:33:09.923 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-01-14 00:33:09.940 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-14 00:33:10.013 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-01-14 00:33:10.035 [main] INFO  com.bioodas.seckill.MainApplication - Started MainApplication in 9.317 seconds (JVM running for 10.707)
+2018-01-14 00:33:28.350 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/seckill] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-14 00:33:28.351 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-14 00:33:28.482 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 130 ms
+2018-01-14 00:33:29.165 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-01-14 00:33:30.506 [http-nio-8080-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-01-14 00:33:30.639 [http-nio-8080-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-01-14 00:33:30.639 [http-nio-8080-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-01-14 00:33:30.640 [http-nio-8080-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-01-14 00:33:30.640 [http-nio-8080-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-01-14 00:33:30.651 [http-nio-8080-exec-2] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-01-14 00:33:30.651 [http-nio-8080-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-01-14 00:34:00.711 [http-nio-8080-exec-8] ERROR c.bioodas.seckill.handler.SeckillExceptionHandler - 异常控制器异常信息:{}
+java.lang.NullPointerException: null
+	at com.bioodas.seckill.web.controller.SeckillController.kill(SeckillController.java:42)
+	at com.bioodas.seckill.web.controller.SeckillController$$FastClassBySpringCGLIB$$6a51a37e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.bioodas.seckill.web.controller.SeckillController$$EnhancerBySpringCGLIB$$11526367.kill(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-01-14 00:35:05.723 [http-nio-8080-exec-9] ERROR c.bioodas.seckill.handler.SeckillExceptionHandler - 异常控制器异常信息:{}
+java.lang.NullPointerException: null
+	at com.bioodas.seckill.web.controller.SeckillController.kill(SeckillController.java:42)
+	at com.bioodas.seckill.web.controller.SeckillController$$FastClassBySpringCGLIB$$6a51a37e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.bioodas.seckill.web.controller.SeckillController$$EnhancerBySpringCGLIB$$11526367.kill(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-01-14 00:35:42.849 [http-nio-8080-exec-7] ERROR c.bioodas.seckill.handler.SeckillExceptionHandler - 异常控制器异常信息:{}
+java.lang.NullPointerException: null
+	at com.bioodas.seckill.web.controller.SeckillController.kill(SeckillController.java:42)
+	at com.bioodas.seckill.web.controller.SeckillController$$FastClassBySpringCGLIB$$6a51a37e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.bioodas.seckill.web.controller.SeckillController$$EnhancerBySpringCGLIB$$11526367.kill(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-01-14 00:36:26.587 [http-nio-8080-exec-4] ERROR c.bioodas.seckill.handler.SeckillExceptionHandler - 异常控制器异常信息:{}
+java.lang.NullPointerException: null
+	at com.bioodas.seckill.web.controller.SeckillController.kill(SeckillController.java:42)
+	at com.bioodas.seckill.web.controller.SeckillController$$FastClassBySpringCGLIB$$6a51a37e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.bioodas.seckill.web.controller.SeckillController$$EnhancerBySpringCGLIB$$11526367.kill(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-01-14 00:37:35.512 [http-nio-8080-exec-4] ERROR c.bioodas.seckill.handler.SeckillExceptionHandler - 异常控制器异常信息:{}
+java.lang.NullPointerException: null
+	at com.bioodas.seckill.web.controller.SeckillController.kill(SeckillController.java:42)
+	at com.bioodas.seckill.web.controller.SeckillController$$FastClassBySpringCGLIB$$6a51a37e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.bioodas.seckill.web.controller.SeckillController$$EnhancerBySpringCGLIB$$11526367.kill(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-01-14 00:38:01.824 [main] INFO  com.bioodas.seckill.MainApplication - Starting MainApplication on Mick with PID 5328 (E:\dev\seckill\target\classes started by Administrator in E:\dev\seckill)
+2018-01-14 00:38:01.835 [main] INFO  com.bioodas.seckill.MainApplication - No active profile set, falling back to default profiles: default
+2018-01-14 00:38:02.417 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@589da3f3: startup date [Sun Jan 14 00:38:02 CST 2018]; root of context hierarchy
+2018-01-14 00:38:02.771 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-14 00:38:03.997 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-14 00:38:04.505 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-14 00:38:06.000 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-01-14 00:38:06.021 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-14 00:38:06.023 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-14 00:38:06.274 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/seckill] - Initializing Spring embedded WebApplicationContext
+2018-01-14 00:38:06.275 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3857 ms
+2018-01-14 00:38:06.616 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-14 00:38:06.624 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-14 00:38:06.625 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-14 00:38:06.626 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-14 00:38:06.626 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-14 00:38:08.743 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@589da3f3: startup date [Sun Jan 14 00:38:02 CST 2018]; root of context hierarchy
+2018-01-14 00:38:08.896 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/common/login],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.LoginController.index()
+2018-01-14 00:38:08.898 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/common/login],methods=[POST]}" onto public com.bioodas.seckill.vo.ResultVO<?> com.bioodas.seckill.web.controller.LoginController.login(javax.servlet.http.HttpServletResponse,com.bioodas.seckill.web.form.UserForm)
+2018-01-14 00:38:08.899 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/list],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.ProductController.list(org.springframework.ui.Model,com.bioodas.seckill.entity.User)
+2018-01-14 00:38:08.900 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/detail/{productId}],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.ProductController.detail(org.springframework.ui.Model,com.bioodas.seckill.entity.User,java.lang.String)
+2018-01-14 00:38:08.901 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/test],methods=[GET]}" onto public java.lang.Object com.bioodas.seckill.web.controller.SampleController.thymeleaf()
+2018-01-14 00:38:08.902 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/kill],methods=[POST]}" onto public java.lang.String com.bioodas.seckill.web.controller.SeckillController.kill(com.bioodas.seckill.entity.User,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-01-14 00:38:08.904 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-14 00:38:08.905 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-14 00:38:09.001 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:38:09.001 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:38:09.038 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in seckillExceptionHandler
+2018-01-14 00:38:09.113 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:38:10.540 [main] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-01-14 00:38:11.206 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-14 00:38:11.208 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-14 00:38:11.217 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-14 00:38:11.238 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-14 00:38:11.260 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-01-14 00:38:11.281 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-14 00:38:11.324 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-01-14 00:38:11.334 [main] INFO  com.bioodas.seckill.MainApplication - Started MainApplication in 10.129 seconds (JVM running for 11.78)
+2018-01-14 00:38:21.880 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/seckill] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-14 00:38:21.881 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-14 00:38:21.942 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 61 ms
+2018-01-14 00:38:22.550 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-01-14 00:38:23.944 [http-nio-8080-exec-4] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-01-14 00:38:24.065 [http-nio-8080-exec-4] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-01-14 00:38:24.065 [http-nio-8080-exec-4] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-01-14 00:38:24.065 [http-nio-8080-exec-4] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-01-14 00:38:24.066 [http-nio-8080-exec-4] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-01-14 00:38:24.078 [http-nio-8080-exec-4] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-01-14 00:38:24.078 [http-nio-8080-exec-4] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-01-14 00:38:28.877 [http-nio-8080-exec-3] INFO  c.bioodas.seckill.web.controller.SeckillController - [请求]用户:111开始秒杀商品:2当前库存:10
+2018-01-14 00:38:29.054 [http-nio-8080-exec-3] INFO  c.b.seckill.service.impl.SeckillOrderServiceImpl - [业务]用户:111秒杀商品:2库存减1:失败
+2018-01-14 00:38:29.244 [http-nio-8080-exec-3] INFO  c.b.seckill.service.impl.SeckillOrderServiceImpl - [业务]用户:111秒杀商品:2 订单出参:com.bioodas.seckill.entity.OrderInfo={
+  "id": "1515861509076208163",
+  "userId": "111",
+  "productId": "2",
+  "deliveryAddrId": "c9b588c39b354f2f914c1a0e9b48686e",
+  "productName": "iphone6",
+  "productPrice": 78.98,
+  "productQuantity": 1,
+  "orderChannel": 0,
+  "status": 0,
+  "createTime": "Jan 14, 2018 12:38:29 AM"
+} 秒杀订单出参:com.bioodas.seckill.entity.SeckillOrder={
+  "id": "1515861509163286600",
+  "userId": "111",
+  "orderId": "1515861509076208163",
+  "productId": "2"
+}
+2018-01-14 00:43:43.482 [main] INFO  com.bioodas.seckill.MainApplication - Starting MainApplication on Mick with PID 7108 (E:\dev\seckill\target\classes started by Administrator in E:\dev\seckill)
+2018-01-14 00:43:43.492 [main] INFO  com.bioodas.seckill.MainApplication - No active profile set, falling back to default profiles: default
+2018-01-14 00:43:44.068 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-14 00:43:44.142 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@589da3f3: startup date [Sun Jan 14 00:43:44 CST 2018]; root of context hierarchy
+2018-01-14 00:43:45.543 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-14 00:43:46.078 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-14 00:43:47.789 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-01-14 00:43:47.834 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-14 00:43:47.838 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-14 00:43:48.233 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/seckill] - Initializing Spring embedded WebApplicationContext
+2018-01-14 00:43:48.234 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4092 ms
+2018-01-14 00:43:48.736 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-14 00:43:48.747 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-14 00:43:48.748 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-14 00:43:48.749 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-14 00:43:48.749 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-14 00:43:50.878 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@589da3f3: startup date [Sun Jan 14 00:43:44 CST 2018]; root of context hierarchy
+2018-01-14 00:43:51.004 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/common/login],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.LoginController.index()
+2018-01-14 00:43:51.006 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/common/login],methods=[POST]}" onto public com.bioodas.seckill.vo.ResultVO<?> com.bioodas.seckill.web.controller.LoginController.login(javax.servlet.http.HttpServletResponse,com.bioodas.seckill.web.form.UserForm)
+2018-01-14 00:43:51.008 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/list],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.ProductController.list(org.springframework.ui.Model,com.bioodas.seckill.entity.User)
+2018-01-14 00:43:51.009 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/detail/{productId}],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.ProductController.detail(org.springframework.ui.Model,com.bioodas.seckill.entity.User,java.lang.String)
+2018-01-14 00:43:51.010 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/test],methods=[GET]}" onto public java.lang.Object com.bioodas.seckill.web.controller.SampleController.thymeleaf()
+2018-01-14 00:43:51.012 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/kill],methods=[POST]}" onto public java.lang.String com.bioodas.seckill.web.controller.SeckillController.kill(com.bioodas.seckill.entity.User,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-01-14 00:43:51.014 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-14 00:43:51.015 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-14 00:43:51.087 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:43:51.088 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:43:51.126 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in seckillExceptionHandler
+2018-01-14 00:43:51.182 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 00:43:52.438 [main] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-01-14 00:43:53.052 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-14 00:43:53.055 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-14 00:43:53.061 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-14 00:43:53.082 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-14 00:43:53.101 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-01-14 00:43:53.116 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-14 00:43:53.188 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-01-14 00:43:53.203 [main] INFO  com.bioodas.seckill.MainApplication - Started MainApplication in 10.352 seconds (JVM running for 11.661)
+2018-01-14 00:44:16.752 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/seckill] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-14 00:44:16.753 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-14 00:44:16.817 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 64 ms
+2018-01-14 00:44:17.436 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-01-14 00:44:18.732 [http-nio-8080-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-01-14 00:44:18.859 [http-nio-8080-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-01-14 00:44:18.859 [http-nio-8080-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-01-14 00:44:18.860 [http-nio-8080-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-01-14 00:44:18.861 [http-nio-8080-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-01-14 00:44:18.872 [http-nio-8080-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-01-14 00:44:18.872 [http-nio-8080-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-01-14 00:44:25.007 [http-nio-8080-exec-7] INFO  c.bioodas.seckill.web.controller.SeckillController - [请求]用户:111开始秒杀商品:2当前库存:10
+2018-01-14 00:44:25.201 [http-nio-8080-exec-7] INFO  c.b.seckill.service.impl.SeckillOrderServiceImpl - [业务]用户:111秒杀商品:2库存减1:成功
+2018-01-14 00:44:25.396 [http-nio-8080-exec-7] INFO  c.b.seckill.service.impl.SeckillOrderServiceImpl - [业务]用户:111秒杀商品:2 订单出参:com.bioodas.seckill.entity.OrderInfo={
+  "id": "1515861865215966983",
+  "userId": "111",
+  "productId": "2",
+  "deliveryAddrId": "7eb38402bd3c417f8a55eadcfc2921e5",
+  "productName": "iphone6",
+  "productPrice": 78.98,
+  "productQuantity": 1,
+  "orderChannel": 0,
+  "status": 0,
+  "createTime": "Jan 14, 2018 12:44:25 AM"
+} 秒杀订单出参:com.bioodas.seckill.entity.SeckillOrder={
+  "id": "1515861865305856954",
+  "userId": "111",
+  "orderId": "1515861865215966983",
+  "productId": "2"
+}
+2018-01-14 00:47:06.110 [http-nio-8080-exec-5] INFO  c.bioodas.seckill.web.controller.SeckillController - [请求]用户:111开始秒杀商品:2当前库存:9
+2018-01-14 00:47:06.233 [http-nio-8080-exec-5] INFO  c.b.seckill.service.impl.SeckillOrderServiceImpl - [业务]用户:111秒杀商品:2库存减1:成功
+2018-01-14 00:47:06.422 [http-nio-8080-exec-5] INFO  c.b.seckill.service.impl.SeckillOrderServiceImpl - [业务]用户:111秒杀商品:2 订单出参:com.bioodas.seckill.entity.OrderInfo={
+  "id": "1515862026234330263",
+  "userId": "111",
+  "productId": "2",
+  "deliveryAddrId": "9092175b44264da6a5141605b8f350a6",
+  "productName": "iphone6",
+  "productPrice": 78.98,
+  "productQuantity": 1,
+  "orderChannel": 0,
+  "status": 0,
+  "createTime": "Jan 14, 2018 12:47:06 AM"
+} 秒杀订单出参:com.bioodas.seckill.entity.SeckillOrder={
+  "id": "1515862026333639506",
+  "userId": "111",
+  "orderId": "1515862026234330263",
+  "productId": "2"
+}
+2018-01-14 00:48:31.398 [http-nio-8080-exec-4] INFO  c.bioodas.seckill.web.controller.SeckillController - [请求]用户:111开始秒杀商品:2当前库存:8
+2018-01-14 00:48:31.519 [http-nio-8080-exec-4] INFO  c.b.seckill.service.impl.SeckillOrderServiceImpl - [业务]用户:111秒杀商品:2库存减1:成功
+2018-01-14 00:48:31.686 [http-nio-8080-exec-4] INFO  c.b.seckill.service.impl.SeckillOrderServiceImpl - [业务]用户:111秒杀商品:2 订单出参:com.bioodas.seckill.entity.OrderInfo={
+  "id": "1515862111520106729",
+  "userId": "111",
+  "productId": "2",
+  "deliveryAddrId": "a9fcc47c75914020a922e6b1ddf50753",
+  "productName": "iphone6",
+  "productPrice": 78.98,
+  "productQuantity": 1,
+  "orderChannel": 0,
+  "status": 0,
+  "createTime": "Jan 14, 2018 12:48:31 AM"
+} 秒杀订单出参:com.bioodas.seckill.entity.SeckillOrder={
+  "id": "1515862111600150056",
+  "userId": "111",
+  "orderId": "1515862111520106729",
+  "productId": "2"
+}
+2018-01-14 01:03:55.362 [main] INFO  com.bioodas.seckill.MainApplication - Starting MainApplication on Mick with PID 832 (E:\dev\seckill\target\classes started by Administrator in E:\dev\seckill)
+2018-01-14 01:03:55.371 [main] INFO  com.bioodas.seckill.MainApplication - No active profile set, falling back to default profiles: default
+2018-01-14 01:03:55.999 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-14 01:03:56.015 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@589da3f3: startup date [Sun Jan 14 01:03:56 CST 2018]; root of context hierarchy
+2018-01-14 01:03:57.298 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-14 01:03:57.900 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-14 01:03:59.435 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-01-14 01:03:59.454 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-01-14 01:03:59.455 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-14 01:03:59.652 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/seckill] - Initializing Spring embedded WebApplicationContext
+2018-01-14 01:03:59.653 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3638 ms
+2018-01-14 01:03:59.952 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-14 01:03:59.961 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-14 01:03:59.962 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-14 01:03:59.962 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-14 01:03:59.962 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-14 01:04:01.970 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@589da3f3: startup date [Sun Jan 14 01:03:56 CST 2018]; root of context hierarchy
+2018-01-14 01:04:02.150 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/common/login],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.LoginController.index()
+2018-01-14 01:04:02.152 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/common/login],methods=[POST]}" onto public com.bioodas.seckill.vo.ResultVO<?> com.bioodas.seckill.web.controller.LoginController.login(javax.servlet.http.HttpServletResponse,com.bioodas.seckill.web.form.UserForm)
+2018-01-14 01:04:02.156 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/list],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.ProductController.list(org.springframework.ui.Model,com.bioodas.seckill.entity.User)
+2018-01-14 01:04:02.157 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product/detail/{productId}],methods=[GET]}" onto public java.lang.String com.bioodas.seckill.web.controller.ProductController.detail(org.springframework.ui.Model,com.bioodas.seckill.entity.User,java.lang.String)
+2018-01-14 01:04:02.159 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/test],methods=[GET]}" onto public java.lang.Object com.bioodas.seckill.web.controller.SampleController.thymeleaf()
+2018-01-14 01:04:02.161 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/kill],methods=[POST]}" onto public java.lang.String com.bioodas.seckill.web.controller.SeckillController.kill(com.bioodas.seckill.entity.User,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-01-14 01:04:02.166 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-14 01:04:02.173 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-14 01:04:02.259 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 01:04:02.260 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 01:04:02.302 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in seckillExceptionHandler
+2018-01-14 01:04:02.515 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-14 01:04:03.842 [main] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-01-14 01:04:04.510 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-01-14 01:04:04.512 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-14 01:04:04.519 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-14 01:04:04.539 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-14 01:04:04.561 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-01-14 01:04:04.578 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-01-14 01:04:04.619 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-01-14 01:04:04.628 [main] INFO  com.bioodas.seckill.MainApplication - Started MainApplication in 9.944 seconds (JVM running for 11.815)
+2018-01-14 01:04:08.925 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/seckill] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-14 01:04:08.926 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-14 01:04:09.024 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 98 ms
+2018-01-14 01:04:09.686 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-01-14 01:04:11.199 [http-nio-8080-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-01-14 01:04:11.393 [http-nio-8080-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-01-14 01:04:11.394 [http-nio-8080-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-01-14 01:04:11.394 [http-nio-8080-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-01-14 01:04:11.394 [http-nio-8080-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-01-14 01:04:11.405 [http-nio-8080-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-01-14 01:04:11.406 [http-nio-8080-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-01-14 01:04:59.660 [http-nio-8080-exec-8] INFO  c.bioodas.seckill.web.controller.SeckillController - [请求]用户:111开始秒杀商品:2当前库存:1
+2018-01-14 01:04:59.855 [http-nio-8080-exec-8] INFO  c.b.seckill.service.impl.SeckillOrderServiceImpl - [业务]用户:111秒杀商品:2库存减1:成功
+2018-01-14 01:05:00.057 [http-nio-8080-exec-8] INFO  c.b.seckill.service.impl.SeckillOrderServiceImpl - [业务]用户:111秒杀商品:2 订单出参:com.bioodas.seckill.entity.OrderInfo={
+  "id": "1515863099876691943",
+  "userId": "111",
+  "productId": "2",
+  "deliveryAddrId": "9affa78e8e77457a8c8cc6ae824d3e48",
+  "productName": "iphone6",
+  "productPrice": 78.98,
+  "productQuantity": 1,
+  "orderChannel": 0,
+  "status": 0,
+  "createTime": "Jan 14, 2018 1:04:59 AM"
+} 秒杀订单出参:com.bioodas.seckill.entity.SeckillOrder={
+  "id": "1515863099971567587",
+  "userId": "111",
+  "orderId": "1515863099876691943",
+  "productId": "2"
+}

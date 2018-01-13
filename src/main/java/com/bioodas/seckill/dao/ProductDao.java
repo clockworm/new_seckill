@@ -30,5 +30,5 @@ public interface ProductDao {
     
     @Select("select p.*,sp.id as seckill_product_id,sp.seckill_price,sp.seckill_stock,sp.start_time,sp.end_time  from seckill_product sp left join product p on sp.product_id = p.id where p.id=#{productId}")
     ProductVO findById(@Param("productId") String productId);
-    
+
 }
