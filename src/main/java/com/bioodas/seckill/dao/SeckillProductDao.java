@@ -18,6 +18,6 @@ public interface SeckillProductDao {
 
     int updateByPrimaryKey(SeckillProduct record);
     
-    @Update("update seckill_product set seckill_stock = seckill_stock -1 where product_id = #{productId}")
+    @Update("update seckill_product set seckill_stock = seckill_stock -1 where product_id = #{productId} and seckill_stock > 0")
 	int reduceStock(SeckillProduct seckillProduct);
 }

@@ -11,6 +11,8 @@ import com.bioodas.seckill.dao.SeckillOrderDao;
 import com.bioodas.seckill.entity.OrderInfo;
 import com.bioodas.seckill.entity.SeckillOrder;
 import com.bioodas.seckill.entity.User;
+import com.bioodas.seckill.enums.ResultEnum;
+import com.bioodas.seckill.exception.SeckillException;
 import com.bioodas.seckill.service.OrderService;
 import com.bioodas.seckill.service.SeckillOrderService;
 import com.bioodas.seckill.service.SeckillProductService;
@@ -79,6 +81,7 @@ public class SeckillOrderServiceImpl implements SeckillOrderService{
 	@Transactional
 	public OrderInfo seckillProduct(User user, ProductVO productVO) {
 		int stock = seckillProductService.reduceStock(productVO);
+		if(stock == 0) throw new SeckillException(ResultEnum.SECKILL_FAIL_NOT_STOCK);
 		log.info("[业务]用户:{}秒杀商品:{}库存减1:{}",user.getId(),productVO.getId(),stock == 1 ? "成功" :"失败");
 		OrderInfo orderInfo = orderService.createOrder(user,productVO);
 		SeckillOrder seckillOrder = this.createSeckillOrder(orderInfo);

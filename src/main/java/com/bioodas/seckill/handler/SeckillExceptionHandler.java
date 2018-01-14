@@ -56,6 +56,7 @@ public class SeckillExceptionHandler {
 	@ExceptionHandler(value = SeckillException.class)
 	@ResponseBody
 	public ResultVO<?> handlerSellException(SeckillException e) {
+		log.warn("业务异常:{}",e.getMessage());
 		return ResultVOUtil.error(e.getCode(), e.getMessage());
 	}
 
