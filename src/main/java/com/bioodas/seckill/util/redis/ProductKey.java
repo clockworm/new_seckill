@@ -6,8 +6,8 @@ public class ProductKey extends BasePrefix{
 		super(expireSeconds, keyPrefix);
 	}
 	
-	public final static ProductKey generateKeyByList = new ProductKey(60,"list");
+	public final static ProductKey generateKeyByList = new ProductKey(29,"list");
 	
-	public final static ProductKey generateKeyByDetailAndProductId = new ProductKey(60,"detail_%s");
+	public final static ProductKey generateKeyByDetailAndProductId = new ProductKey(29,"detail_%s");
 
 }
