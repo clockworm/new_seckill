@@ -57,5 +57,13 @@ public class UserDaoTest extends BaseTest{
 		}
 	}
 	
+	@Test
+	public void createPass() {
+		String newPass = MD5Util.inputPassToDbPass("123456", "1514742677242850681");
+		String oldPass = MD5Util.formPassToDBPass("tang0624", "1514742677242850681");
+		System.err.println(newPass);
+		System.err.println(oldPass);
+	}
+	
 	
 }

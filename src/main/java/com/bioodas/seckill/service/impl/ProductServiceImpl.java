@@ -25,8 +25,8 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
-	public Product saveOrUpdate(Product t) {
-		return null;
+	public int saveOrUpdate(Product t) {
+		return 0;
 	}
 
 	@Override

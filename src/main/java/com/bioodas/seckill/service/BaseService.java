@@ -10,7 +10,7 @@ import org.springframework.data.domain.Pageable;
  * 基类接口
  */
 public interface BaseService<T> {
-    T saveOrUpdate(T t);
+	int saveOrUpdate(T t);
     T delete(String id);
     T findById(String id);
     List<T> findAll();

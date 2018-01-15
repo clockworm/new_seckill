@@ -25,8 +25,8 @@ public class OrderServiceImpl implements OrderService{
 	private OrderInfoDao orderInfoDao;
 
 	@Override
-	public OrderInfo saveOrUpdate(OrderInfo t) {
-		return null;
+	public int saveOrUpdate(OrderInfo t) {
+		return 0;
 	}
 
 	@Override

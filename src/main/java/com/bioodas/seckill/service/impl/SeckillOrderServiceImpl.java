@@ -35,8 +35,8 @@ public class SeckillOrderServiceImpl implements SeckillOrderService{
 	private OrderService orderService;
 
 	@Override
-	public SeckillOrder saveOrUpdate(SeckillOrder t) {
-		return null;
+	public int saveOrUpdate(SeckillOrder t) {
+		return 0;
 	}
 
 	@Override

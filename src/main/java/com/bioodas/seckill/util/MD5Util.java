@@ -36,7 +36,6 @@ public class MD5Util {
 	
 	/**明文加密成数据库MD5   saltDb数据库随机盐值*/
 	public static String inputPassToDbPass(String passWord,String saltDb) {
-		System.err.println(saltDb);
 		String formPass = inputPassToFormPass(passWord);
 		String dbpass = formPassToDBPass(formPass,saltDb);
 		return dbpass;
