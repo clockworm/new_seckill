@@ -14,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.thymeleaf.spring4.context.SpringWebContext;
@@ -21,9 +22,12 @@ import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 
 import com.bioodas.seckill.entity.User;
 import com.bioodas.seckill.service.ProductService;
+import com.bioodas.seckill.util.ResultVOUtil;
 import com.bioodas.seckill.util.redis.ProductKey;
 import com.bioodas.seckill.util.redis.RedisClient;
+import com.bioodas.seckill.vo.ProductDetailVO;
 import com.bioodas.seckill.vo.ProductVO;
+import com.bioodas.seckill.vo.ResultVO;
 
 /**
  * @author TangLingYun
@@ -60,6 +64,7 @@ public class ProductController {
 		return html;
 	}
 	
+	/**Redis页面缓存*/
 	@GetMapping(value="detail/{productId}",produces="text/html")
 	public @ResponseBody String detail(User user,HttpServletRequest request,HttpServletResponse response,Model model,@PathVariable("productId") String productId) {
 		//缓存取出页面
@@ -88,4 +93,26 @@ public class ProductController {
 	}
 	
 
+	/**页面静态化*/
+	@GetMapping(value="detail/{productId}")
+	public @ResponseBody ResultVO<?> detailStatic(User user,HttpServletRequest request,HttpServletResponse response,Model model,@PathVariable("productId") String productId) {
+		int second = 0;
+		ProductVO product = productService.findById(productId);
+		DateTime startTime = new DateTime(product.getStartTime()); 
+		DateTime endTime = new DateTime(product.getEndTime()); 
+		if(startTime.isAfterNow()) {
+			Seconds seconds = Seconds.secondsBetween(startTime, DateTime.now());
+			second = Math.abs(seconds.getSeconds());
+		}else if(endTime.isBeforeNow()) {
+			second = -1;
+		}else {
+			second = 0;
+		}
+		ProductDetailVO productDetailVO = new ProductDetailVO();
+		productDetailVO.setSeconds(second);
+		productDetailVO.setProduct(product);
+		productDetailVO.setUser(user);
+		return ResultVOUtil.success(productDetailVO);
+	}
+	
 }

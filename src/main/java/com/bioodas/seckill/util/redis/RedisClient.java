@@ -95,6 +95,21 @@ public class RedisClient {
 	}
 	
 	
+	/** redis 移除Key */ 
+	public long delete(KeyPrefix prefix,String key) {
+		Jedis jedis = null;
+		try {
+			/**生成key策略*/
+			String realKey = String.format(prefix.generateKeyPrefix(),key);
+			jedis = jedisPool.getResource();
+			return jedis.del(realKey);
+		} finally {
+			if (jedis != null) {
+				jedis.close();
+			}
+		}
+	}
+	
 	
 	
 }

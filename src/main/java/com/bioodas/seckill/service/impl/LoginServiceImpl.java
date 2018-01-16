@@ -63,10 +63,10 @@ public class LoginServiceImpl implements LoginService{
 		//查询Cookie
 		Cookie cookie = CookieUtil.getCookie(httpServletRequest, TokenKey.TOKEN_KEY);
 		if(cookie!=null){
-			//清除Redis
-			//redisClient.delete(String.format(RedisConstant.TOKEN_PREFIX,cookie.getValue()));
 			//清除Cookie
 			CookieUtil.setCookie(response,TokenKey.TOKEN_KEY,null,0);
+			//清除Redis
+			redisClient.delete(TokenKey.generateKeyByToken,cookie.getValue());
 		}
 	}
 	
