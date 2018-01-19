@@ -17,13 +17,13 @@ public enum RabbitRoutingEnum {
 	/**队列命名*/
 	private String queueName;
 	/**交换机命名*/
-	private String changeName;
+	private String exChangeName;
 	/**路由命名( 标识--<队列与交换机的绑定>)*/
 	private String routingKey;
 	
-	private RabbitRoutingEnum(String queueName,String changeName, String routingKey) {
+	private RabbitRoutingEnum(String queueName,String exChangeName, String routingKey) {
 		this.queueName = queueName;
-		this.changeName = changeName;
+		this.exChangeName = exChangeName;
 		this.routingKey = routingKey;
 	}
 	

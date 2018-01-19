@@ -24,7 +24,7 @@ public class RabbitConfig{
 	
 	@Bean
 	public DirectExchange userLoginExChange(){
-		return new DirectExchange(RabbitRoutingEnum.USER_LOGIN_ROUTING.getChangeName());
+		return new DirectExchange(RabbitRoutingEnum.USER_LOGIN_ROUTING.getExChangeName());
 	}
 	
 	@Bean
