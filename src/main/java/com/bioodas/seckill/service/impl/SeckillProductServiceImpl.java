@@ -1,5 +1,7 @@
 package com.bioodas.seckill.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,5 +23,10 @@ public class SeckillProductServiceImpl implements SeckillProductService{
 		procut.setProductId(productVO.getId());
 		procut.setSeckillStock(productVO.getSeckillStock());
 		return seckillProductDao.reduceStock(procut);
+	}
+
+	@Override
+	public List<SeckillProduct> findAll() {
+		return seckillProductDao.findAll();
 	}
 }

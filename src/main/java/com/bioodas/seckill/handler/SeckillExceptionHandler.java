@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.BindException;
 import org.springframework.validation.ObjectError;
+import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -40,6 +41,8 @@ public class SeckillExceptionHandler {
 			List<ObjectError> errors = bdEx.getAllErrors();
 			ObjectError error = errors.get(0);
 			return ResultVOUtil.fail("参数错误:".concat(error.getDefaultMessage()));
+		}else if(e instanceof HttpRequestMethodNotSupportedException) {
+			return ResultVOUtil.fail("请求方式错误:"+e.getClass().getSimpleName());
 		}
 		log.error("异常控制器异常信息:{}",e);
 		return ResultVOUtil.error(ResultEnum.SERVER_ERROR.getCode(), ResultEnum.SERVER_ERROR.getMessage());

@@ -1,6 +1,9 @@
 package com.bioodas.seckill.dao;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import com.bioodas.seckill.entity.SeckillProduct;
 
@@ -20,4 +23,7 @@ public interface SeckillProductDao {
     
     @Update("update seckill_product set seckill_stock = seckill_stock -1 where product_id = #{productId} and seckill_stock > 0")
 	int reduceStock(SeckillProduct seckillProduct);
+
+    @Select("select * from seckill_product")
+	List<SeckillProduct> findAll();
 }

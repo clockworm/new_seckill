@@ -3,6 +3,7 @@ package com.bioodas.seckill.web.controller;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
+import org.springframework.amqp.core.MessageProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -41,6 +42,9 @@ public class LoginController {
 		 if(login){
 			 try {
 				sender.send(JsonUtil.obejctToJson(userForm, false), RabbitRoutingEnum.USER_LOGIN_ROUTING);
+				MessageProperties properties = new MessageProperties();
+				properties.setHeader("sendInstruction", true);
+				sender.send(JsonUtil.obejctToJson(userForm, false),properties, RabbitRoutingEnum.HEADERS_ROUTING);
 			} catch (Exception e) {
 				throw new SeckillException(7381,e.getMessage());
 			}
