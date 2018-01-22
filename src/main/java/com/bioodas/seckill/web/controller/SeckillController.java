@@ -1,5 +1,6 @@
 package com.bioodas.seckill.web.controller;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentMap;
@@ -47,6 +48,8 @@ public class SeckillController implements InitializingBean{
 	@Autowired
 	private RabbitMQSender sender;
 	
+	/**内存标识 该商品是否卖完*/
+	private Map<String,Boolean> markMap = new HashMap<String, Boolean>(); 
 
 	@Override
 	public void afterPropertiesSet() throws Exception {
@@ -54,6 +57,7 @@ public class SeckillController implements InitializingBean{
 		List<SeckillProduct> list = seckillProductService.findAll();
 		for (SeckillProduct seckillProduct : list) {
 			redisClient.set(ProductKey.generateKeyByProductStock, seckillProduct.getProductId(), seckillProduct.getSeckillStock());
+			markMap.put(seckillProduct.getProductId(), false);
 		}
 	}
 	
@@ -63,9 +67,14 @@ public class SeckillController implements InitializingBean{
 		if(user == null) {
 			throw new AuthorizeException();
 		}
+		if(markMap.get(productId)) throw new SeckillException(ResultEnum.SECKILL_FAIL_NOT_STOCK);
+		
 		//预减库存
 		long stock = redisClient.decr(ProductKey.generateKeyByProductStock, productId);
-		if(stock < 0) throw new SeckillException(ResultEnum.SECKILL_FAIL_NOT_STOCK);
+		if(stock < 0) {
+			markMap.put(productId, true);
+			throw new SeckillException(ResultEnum.SECKILL_FAIL_NOT_STOCK);
+		}
 		//预下订单
 		ConcurrentMap<String,Object> body = Maps.newConcurrentMap();
 		body.put("userId", user.getId());
