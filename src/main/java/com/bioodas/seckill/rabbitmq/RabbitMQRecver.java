@@ -14,6 +14,7 @@ import com.bioodas.seckill.entity.SeckillOrder;
 import com.bioodas.seckill.entity.User;
 import com.bioodas.seckill.service.ProductService;
 import com.bioodas.seckill.service.SeckillOrderService;
+import com.bioodas.seckill.service.UserService;
 import com.bioodas.seckill.util.JsonUtil;
 import com.bioodas.seckill.util.redis.ProductKey;
 import com.bioodas.seckill.util.redis.RedisClient;
@@ -32,6 +33,9 @@ public class RabbitMQRecver {
 	private SeckillOrderService seckillOrderService;
 	
 	@Autowired
+	private UserService userService;
+	
+	@Autowired
 	private RedisClient redisCilent;
 	
 	@RabbitListener(queues = "user.login.queue")
@@ -48,11 +52,8 @@ public class RabbitMQRecver {
 	public void productKillQueueListener(@Payload String message) throws Exception{
 		log.info("开始秒杀订单处理:{}",message);
 		Map<?,?> map = JsonUtil.jsonToObject(message, Map.class);
-		String userStr = (String)map.get("user");
-		User user = JsonUtil.jsonToObject(userStr, User.class);
+		String userId = (String)map.get("userId");
 		String productId = (String) map.get("productId");
-		System.err.println(userStr);
-		System.err.println(productId);
 		
 		//库存
 		ProductVO product = productService.findById(productId);
@@ -64,13 +65,13 @@ public class RabbitMQRecver {
 		}
 		
 		//判断秒杀订单是否多次秒杀
-		List<SeckillOrder> list = seckillOrderService.findSeckillOrderByUserIdAndProductId(user.getId(),productId);
+		List<SeckillOrder> list = seckillOrderService.findSeckillOrderByUserIdAndProductId(userId,productId);
 		if(!CollectionUtils.isEmpty(list)) {
 			log.info("重复秒杀:{}",message);
 			return;
 		} 
-		
-		log.info("[请求]用户:{}开始秒杀商品:{}当前库存:{}",user.getId(),product.getId(),stock);
+		User user = userService.findById(userId);
+		log.info("[请求]用户:{}开始秒杀商品:{}当前库存:{}",userId,product.getId(),stock);
 		//开始秒杀 减库存 下订单 写入秒杀订单
 		seckillOrderService.seckillProduct(user,product);
 		log.info("处理秒杀订单结束:{}",message);

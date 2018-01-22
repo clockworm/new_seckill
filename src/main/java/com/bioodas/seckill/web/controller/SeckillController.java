@@ -68,7 +68,7 @@ public class SeckillController implements InitializingBean{
 		if(stock < 0) throw new SeckillException(ResultEnum.SECKILL_FAIL_NOT_STOCK);
 		//预下订单
 		ConcurrentMap<String,Object> body = Maps.newConcurrentMap();
-		body.put("user", user);
+		body.put("userId", user.getId());
 		body.put("productId", productId);
 		String message = JsonUtil.obejctToJson(body, false);
 		try {
