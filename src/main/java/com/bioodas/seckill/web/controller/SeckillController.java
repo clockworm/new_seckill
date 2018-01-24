@@ -5,11 +5,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentMap;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -24,6 +26,8 @@ import com.bioodas.seckill.rabbitmq.RabbitRoutingEnum;
 import com.bioodas.seckill.service.SeckillOrderService;
 import com.bioodas.seckill.service.SeckillProductService;
 import com.bioodas.seckill.util.JsonUtil;
+import com.bioodas.seckill.util.KeyUtil;
+import com.bioodas.seckill.util.MD5Util;
 import com.bioodas.seckill.util.ResultVOUtil;
 import com.bioodas.seckill.util.redis.ProductKey;
 import com.bioodas.seckill.util.redis.RedisClient;
@@ -61,12 +65,20 @@ public class SeckillController implements InitializingBean{
 		}
 	}
 	
-	@PostMapping("kill")
-	public String kill(User user,String productId,Map<String,Object> map) {
-		//登录
-		if(user == null) {
-			throw new AuthorizeException();
-		}
+	@GetMapping("seckillPath")
+	public @ResponseBody ResultVO<?> seckillPath(User user,String productId,Map<String,Object> map) {
+		String seckillPath = MD5Util.md5(KeyUtil.genUniqueNumKey());
+		redisClient.set(ProductKey.generateKeyByProductSeckillPath, user.getId().concat(productId), seckillPath);
+		return ResultVOUtil.success(seckillPath);
+	}
+	
+	
+	@PostMapping("{seckillPath}/kill")
+	public String kill(User user,String productId,@PathVariable(name="seckillPath",required=true) String seckillPath,Map<String,Object> map) {
+		if(StringUtils.isBlank(seckillPath)) throw new SeckillException(ResultEnum.REQUEST_ERROR);
+		if(user == null) throw new AuthorizeException();
+		String path = redisClient.get(ProductKey.generateKeyByProductSeckillPath, user.getId().concat(productId), String.class);
+		if(!seckillPath.equals(path)) throw new SeckillException(ResultEnum.REQUEST_ERROR);
 		if(markMap.get(productId)) throw new SeckillException(ResultEnum.SECKILL_FAIL_NOT_STOCK);
 		
 		//预减库存

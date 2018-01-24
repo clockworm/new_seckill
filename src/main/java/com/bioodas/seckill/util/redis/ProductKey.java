@@ -13,5 +13,7 @@ public class ProductKey extends BasePrefix{
 	public final static ProductKey generateKeyByProductStock= new ProductKey(60*60*24*30,"product_stock_%s");
 	
 	public final static ProductKey generateKeyByProductNoNeStock= new ProductKey(60*60*24*30,"product_none_stock_%s");
+	
+	public final static ProductKey generateKeyByProductSeckillPath= new ProductKey(60,"product_seckill_path_%s");
 
 }

@@ -17,6 +17,7 @@
     <script type="text/javascript" th:src="@{/js/md5.min.js}"></script>
     <!-- common.js -->
     <script type="text/javascript" th:src="@{/js/common.js}"></script>
+    <script type="text/javascript" th:src="@{/js/util.js}"></script>
 </head>
 <body>
 
@@ -45,10 +46,8 @@
         	<span th:if="${second eq -1}">秒杀已结束</span>
         </td>
         <td>
-        	<form id="seckill" method="post" action="../../kill">
-        		<button class="btn btn-primary btn-block" type="submit" id="buyButton">立即秒杀</button>
-        		<input type="hidden" name="productId" th:value="${product.id}" />
-        	</form>
+        		<button class="btn btn-primary btn-block" onclick="seckill()">立即秒杀</button>
+        		<input type="hidden" id="productId" th:value="${product.id}" />
         </td>
      </tr>
      <tr>  
@@ -91,6 +90,14 @@ function countDown(){
 		$("#buyButton").attr("disabled", true);
 		$("#seckillTip").html("秒杀已经结束");
 	}
+}
+
+function seckill() {
+	var url = "../../seckillPath";
+	var productId = $('#productId').val();
+	var data = sync(url,{"productId":productId},"GET");
+	var seckill_path = "../../"+data.data+"/kill";
+	post(seckill_path,{"productId":productId});
 }
 
 </script>
