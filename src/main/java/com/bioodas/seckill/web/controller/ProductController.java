@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.thymeleaf.spring4.context.SpringWebContext;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 
+import com.bioodas.seckill.annotation.AccessLimit;
 import com.bioodas.seckill.entity.User;
 import com.bioodas.seckill.service.ProductService;
 import com.bioodas.seckill.util.ResultVOUtil;
@@ -64,6 +65,7 @@ public class ProductController {
 	}
 	
 	/**Redis页面缓存*/
+	@AccessLimit(seconds=5,maxCount=2)
 	@GetMapping(value="detail/{productId}",produces="text/html")
 	public @ResponseBody String detail(User user,HttpServletRequest request,HttpServletResponse response,Model model,@PathVariable("productId") String productId) {
 		//缓存取出页面
@@ -92,7 +94,6 @@ public class ProductController {
 	}
 	
 
-	/**页面静态化*/
 	@GetMapping(value="detail/{productId}")
 	public @ResponseBody ResultVO<?> detailStatic(User user,HttpServletRequest request,HttpServletResponse response,Model model,@PathVariable("productId") String productId) {
 		int second = 0;
