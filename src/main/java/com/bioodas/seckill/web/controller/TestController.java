@@ -11,7 +11,7 @@ import com.bioodas.seckill.util.ResultVOUtil;
 
 @Controller
 @RequestMapping("demo")
-public class SampleController {
+public class TestController {
 
 	@Autowired
 	UserDao userDao;

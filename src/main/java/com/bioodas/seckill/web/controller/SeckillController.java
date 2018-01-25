@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.bioodas.seckill.annotation.AccessLimit;
 import com.bioodas.seckill.entity.SeckillOrder;
 import com.bioodas.seckill.entity.SeckillProduct;
 import com.bioodas.seckill.entity.User;
@@ -65,6 +66,7 @@ public class SeckillController implements InitializingBean{
 		}
 	}
 	
+	@AccessLimit
 	@GetMapping("seckillPath")
 	public @ResponseBody ResultVO<?> seckillPath(User user,String productId,Map<String,Object> map) {
 		String seckillPath = MD5Util.md5(KeyUtil.genUniqueNumKey());
@@ -103,8 +105,7 @@ public class SeckillController implements InitializingBean{
 	}
 	
 	@GetMapping("seckillResult")
-	@ResponseBody
-	public ResultVO<?> seckillResult(User user,String productId){
+	public @ResponseBody ResultVO<?> seckillResult(User user,String productId){
 		if(redisClient.exists(ProductKey.generateKeyByProductNoNeStock, productId)) {
 			throw new SeckillException(ResultEnum.SECKILL_FAIL_NOT_STOCK);
 		}

@@ -22,7 +22,7 @@ import com.bioodas.seckill.util.redis.TokenKey;
 
 /**
  * @author TangLingYun
- * @describe 如果用户登录  任意方法区参数带SeckillUser类型的 自动赋值 (参数自构建)
+ * @describe 如果用户登录  控制层第一个参数为User类型的 自动赋值 (参数自构建)
  * @date 2018年1月7日
  */
 @Component

@@ -7,7 +7,7 @@ import lombok.Getter;
 
 /**
  * @author TangLingYun
- * @describe 全局异常处理
+ * @describe 全局业务异常处理
  * @date 2018年1月4日
  */
 @Getter

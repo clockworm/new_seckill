@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 
 /**
  * @author TangLingYun
- * @detail 接口访问次数控制注解(默认5内类接口访问最大次数为9次 默认需要用户登录)
+ * @detail 接口访问次数控制注解(默认5内类接口访问最大次数为7次 默认需要用户登录)
  */
 @Target({ METHOD })
 @Retention(RUNTIME)
