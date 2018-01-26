@@ -6,6 +6,7 @@ import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.MessageProperties;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.rabbit.support.CorrelationData;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -13,10 +14,16 @@ import lombok.extern.slf4j.Slf4j;
 
 @Component
 @Slf4j
-public class RabbitMQSender implements QueueMessageService {
+public class RabbitMQSender implements QueueMessageService,InitializingBean {
 
 	@Autowired
 	private RabbitTemplate rabbitTemplate;
+	
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		/* 设置回调为当前类对象 */
+		rabbitTemplate.setConfirmCallback(this);
+	}
 
 	@Override
 	public void send(Object message, RabbitRoutingEnum routingEnum) throws Exception {
@@ -38,8 +45,6 @@ public class RabbitMQSender implements QueueMessageService {
 
 	/** 设置回调为当前类对象 */
 	private CorrelationData setConfirmCallback() {
-		/* 设置回调为当前类对象 */
-		rabbitTemplate.setConfirmCallback(this);
 		/* 构建回调id为UUID */
 		CorrelationData correlationData = new CorrelationData(UUID.randomUUID().toString());
 		log.info("发送MQ消息代号:{}", correlationData.getId());
